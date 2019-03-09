@@ -1,0 +1,206 @@
+/*********************
+BREAKPOINTS
+*********************/
+.wrapper {
+  display: grid;
+  grid-template-columns: 20% 80% 0%;
+  grid-template-areas: "sidebar header header" "sidebar content content" "footer  footer  footer";
+  background-color: #fff;
+  color: #444; }
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  margin-top: 10%;
+  grid-area: sidebar;
+  background-color: #c8c8c8;
+  z-index: 0; }
+  .sidebar p {
+    margin: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 2%; }
+  .sidebar a {
+    margin: 2%;
+    color: #0a0a0a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 2%; }
+  .sidebar a:hover {
+    margin: 2%;
+    color: #0a9bff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 2%; }
+  .sidebar li {
+    margin: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 1%; }
+  .sidebar li:hover {
+    margin: 2%;
+    color: #0a9bff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 2%; }
+
+.content {
+  grid-area: content;
+  margin-left: 20%;
+  margin-top: 12%;
+  margin-right: 5%; }
+  .content p {
+    width: 100%;
+    color: #0a0a0a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    text-indent: 24px;
+    margin-left: -10%; }
+  .content .setupVisual {
+    width: 75%;
+    height: 75%; }
+  .content .subheader {
+    color: #646464;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5%; }
+  .content h4 {
+    text-align: left;
+    color: #646464;
+    font-size: 16px;
+    font-style: italic; }
+  .content h2 {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3296ff; }
+  .content h1 {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3296ff; }
+  .content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #3296ff; }
+  .content li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #969696;
+    margin-left: 10%;
+    margin-bottom: 12px; }
+  .content .gridImg {
+    grid-area: content;
+    size: 80%;
+    margin-left: 5%;
+    margin-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    position: center; }
+  .content .egImg {
+    grid-area: content;
+    margin-left: 25%;
+    float: center; }
+    .content .egImg p {
+      color: #3296ff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      text-align: left;
+      padding-right: 20%; }
+    .content .egImg img {
+      padding-left: 25px;
+      padding-right: 25px; }
+  .content .instructionalImg {
+    width: 80%;
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 5%; }
+  .content .categ {
+    font-style: italic;
+    font-size: 32px;
+    color: #c8c8c8;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+
+.header {
+  grid-area: header; }
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; }
+
+#pageHeader {
+  margin-top: -15px;
+  width: 100%;
+  grid-area: header;
+  position: fixed;
+  background: white;
+  font-family: 'Montserrat', sans-serif;
+  color: #3296ff;
+  margin-bottom: 25%; }
+  #pageHeader h1 {
+    margin-left: 15%;
+    font-size: 42px;
+    color: #3296ff; }
+  #pageHeader h2 {
+    margin-left: 20%;
+    font-size: 20px;
+    font-style: italic;
+    color: #3296ff; }
+  #pageHeader img {
+    margin-top: -5%;
+    margin-right: 5%;
+    float: right;
+    width: 4%;
+    height: 4%; }
+
+#headerBreak {
+  grid-area: header;
+  margin-top: 3px;
+  width: 100%;
+  z-index: 1;
+  border-top: 3px solid #646464; }
+
+#footerBreak {
+  grid-area: footer;
+  margin-top: 3px;
+  width: 100%;
+  z-index: 2;
+  border-top: 3px solid #646464; }
+
+.footer {
+  grid-area: footer;
+  position: fixed;
+  margin-left: 200px;
+  margin-right: 10%; }
+  .footer a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px; }
+  .footer a:hover {
+    background-color: #ddd;
+    color: black; }
+  .footer .previous {
+    background-color: #f1f1f1;
+    color: black; }
+  .footer .next {
+    background-color: #4CAF50;
+    color: white; }
+  .footer .round {
+    border-radius: 50%; }
+
+#logo {
+  grid-area: header;
+  width: 50px;
+  height: 50px;
+  float: right;
+  padding-right: 100px; }
+
+/*# sourceMappingURL=ebook-grids.css.map */

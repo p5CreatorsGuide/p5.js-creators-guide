@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <head>
+        
+       <link rel = "stylesheet" type = "text/css" href = "stylesheets/ebook-grids.css">
+       <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,600,700" rel="stylesheet"> 
+       <title>        
+            Code Naturally Creator's Guide : Drawing & Design Edition
+        </title>
+           <div class = "sidebar">
+          <p> <a href = "introduction.html">Standing on the Shoulders of Giants</a> </p>
+          <p> <a href = "#">The Language You're Learning</a> </p>
+            <p> <a href = "#">How to use the Creator's Guide : Online and Offline</a> </p>
+           <p> <a href = "chapter-1-vehicle-design.html">Chapter 1: Vehicle Design</a> </p>
+           <p> <a href = "chapter-2-logo-design.html">Chapter 2 : Logo Design</a> </p>
+           <p> <a href = "chapter-3-scaling-to-advanced.html">Chapter 3 : Scaling to Advanced</a> </p>
+           <p> <a href = "chapter-4-landscape-design.html">Chapter 4 : Design a Landscape </a> </p>
+        </div>
+        <span class = "wrapper">
+        <div id = "pageHeader">
+            <span>
+            <h1>
+                Chapter 4: Design a Landscape
+            </h1>
+
+            <h2 class = "sub-header">
+               Designing an Illustration in Advanced 
+            </h2>
+            <img src = "image/cn-c.jpg"></img>
+                <div id = "headerBreak"></div>
+            </span>
+            </div>
+    </head>
+
+    
+
+    <!-- <body> -->
+        <div id ="C4"  class = "content">
+
+            <p>
+                Although adjusting to the larger, to-scale canvas size of Advanced can be overwhelming, that's not the only thing we must be comfortable working with. There are two new functions provided: function setup ( ) { } and function draw ( ) { }. In order to understand how function setup and function draw are working, we have to understand that our browsers, the software we use to request and view different web pages, interprets or reads our code line by line, in the order the lines of code are written.
+ 
+            </p>
+
+            <p> 
+                Even though it may look as if our computer is executing our code in a single instant, JavaScript is actually interpreting our code from the first line that's written until the last. This is why when we begin illustrating with shape functions, we notice that the final shape function called on the last line of our code is always the top-most visible layer on our sketch's canvas. It's as if every line of code calling a shape function is telling your computer to cut that shape out of construction paper and glue it down on top of your canvas in the place you described, regardless of whether or not something has already been drawn in that area. This is also why if you include the background( ) color function on the last line of your project's code, then the very last thing your computer would interpret and execute from your code is an opaque background on top of all the visuals that are drawn before that final step. We must always be careful and intentional with the order of our instructions to the computer, especially when creating visual projects.
+            </p>
+            
+            <p>
+                Being able to slow down and break down each step the computer is carrying out as a result of our code is a very important skill that you will naturally develop over time. Thankfully, programming visual projects makes it easier to form this understanding of how and when our lines of JavaScript code are being executed. function setup ( ) and function draw allow us to control the flow or order of our instructions to the computer even further.
+           
+            </p>
+
+
+            <h1>
+                function setup ( ) {                
+            </h1>
+
+            <h2>
+                and Preparing your Project Canvas with the createCanvas Function
+            </h2>
+
+            <p>
+                You can think of function setup ( ) as your program's start up process. Just as photographers need to load film into older cameras and painters need to prepare their brushes and canvas before they begin painting, p5.js requires a specific start up procedure before we're able to draw anything to our canvas by writing code.
+            </p>
+               
+            <img class = "setupVisual" src = "image/function-setup.svg"></img>
+            <p>
+                Even if you were to leave function setup ( ) empty, your p5.js code would still cary out a beginning procedure which, by default, provides your screen with a sketch canvas or drawing space (which can be changed in the settings menu of your project). One way to take advantage of function setup ( ) by creating a canvas with specific diemensions using:
+            </p>
+            
+            <img class = "setupVisual" src = "image/create-canvas.svg"></img>
+ 
+
+            <p class = "subheader">
+            </p>
+            
+                     <!-- <div class = "egImg">
+                <p>Examples :</p>
+                <img class = "instructionalImg" src = "image/scaling-to-advanced.svg"></img>
+                <img class = "instructionalImg" src = "image/logo2.svg"></img>
+                <img class = "instructionalImg" src = "image/logo3.svg"></img>
+            </div> -->
+           
+          
+        </div>
+        <div class = "footer"></div>
+    </div> 
+    <!-- </body> -->
+
+</html>
