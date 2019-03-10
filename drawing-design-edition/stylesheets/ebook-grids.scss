@@ -12,12 +12,12 @@ body{
     flex-direction: column;
     // grid-gap: 10px;
     // grid-column-gap: 20px;
-    grid-template-columns: 20% 70% 10%;
+    grid-template-columns: 30% 70% 0%;
     grid-template-areas:
     "header header header"
-    "sidebar content etc"
+    "sidebar content content"
     "footer  footer  footer";
-    max-width: 940px;
+    max-width: 1024px;
   
     @mixin breakpoint($point) {
         @if $point == desktop {
@@ -40,6 +40,11 @@ body{
 }
 
 
+
+img{
+    -webkit-transition: 2s;
+}
+
 .sidebar:hover {
     // padding-right: 20px;
     position: fixed;
@@ -47,45 +52,48 @@ body{
     height: 100%;
     width: 30%;
     -webkit-transition: 2s;
+    margin-top:-8px;
+    margin-left: -8px;
     
     // margin-top: 10%;
     grid-area: sidebar;
     background-color: rgba(241,76,126,0.9);
     z-index: 20;
+    box-shadow: 7px 7px 9px rgba(0,0,0,0.5);
     // border-right: 3px solid rgb(100,100,100);
     p {
-        margin-top: 10%;
+       
         font-family: 'Consolas', sans-serif;
         font-size: 16px;
         padding: 2%;
     }
     a {
-        margin: 2%;
+       
         color: rgb(10,10,10);
         font-family: 'Consolas', sans-serif;
         font-size: 14px;
-        padding: 2%;
+        
     }
     a:hover {
-        margin: 2%;
+        
         color: rgb(10,155,255);
         font-family: 'consolas', sans-serif;
         font-size: 14px;
-        padding: 2%;
+        
     }
     
     li {
-        margin: 2%;
+        
         font-family: 'Consolas', sans-serif;
         font-size: 14px;
-        padding: 1%;
+        
     }
     li:hover {
-        margin: 2%;
+        
         color: rgb(10,155,255);
         font-family: 'Consolas', sans-serif;
         font-size: 16px;
-        padding: 2%;
+        
     }
     
 }
@@ -95,42 +103,45 @@ body{
     position: fixed;
     height: 10%;
     width: 10%;
-    -webkit-transition: 4s;
+    -webkit-transition: 2s;
     overflow: hidden;
-    z-index: 20;
+    z-index: 30;
+    margin-top:-8px;
+    margin-left: -8px;
+    
     p {
-        margin-top: 10%;
+        
         font-family: 'Consolas', sans-serif;
         font-size: 16px;
-        padding: 2%;
+        
     }
     a {
-        margin: 2%;
-        color: rgb(10,10,10);
+        -webkit-transition: 1s;
+        color: rgb(10,10,10, 0.1);
         font-family: 'Consolas', sans-serif;
         font-size: 14px;
-        padding: 2%;
+        
     }
     a:hover {
-        margin: 2%;
+        
         color: rgb(10,155,255);
         font-family: 'consolas', sans-serif;
         font-size: 14px;
-        padding: 2%;
+        
     }
     
     li {
-        margin: 2%;
+        
         font-family: 'Consolas', sans-serif;
         font-size: 14px;
-        padding: 1%;
+        
     }
     li:hover {
-        margin: 2%;
+        
         color: rgb(10,155,255);
         font-family: 'Consolas', sans-serif;
         font-size: 16px;
-        padding: 2%;
+        
     }
     
     
@@ -139,7 +150,7 @@ body{
     // flex-direction: column;
     grid-area: content;
     // padding-left: 20px;
-    width: 100%;
+    width: 92%;
     // margin-left: 20%;
     margin-top: 25%;
     // margin-left: 10%;
@@ -152,9 +163,10 @@ body{
         font-family: 'quenalas', sans-serif;
         font-size: 16px;
         text-align: left;
-        text-indent: 24px;
+        text-indent: 52px;
         line-height: 1.8;
-        width: 100%;
+        margin-left: -20%;
+        
         // margin-left: 25%;
     }
 
@@ -163,6 +175,33 @@ body{
         width: 75%;
         height: 75%;
     }
+    #hero-img{
+        max-width:750px;
+        margin-top: -8%;
+        width: 75%;
+        height: 75%;
+        
+    }
+    #hero-img:hover{
+        max-width:755px;
+        margin-top: -8%;
+        width: 75%;
+        height: 75%;
+        
+        // box-shadow: -5px 7px 9px rgba(0,0,0,0.2);
+    }
+    .blue-code{
+        font-family: 'Consolas';
+        color: rgba(14, 144, 181);
+    }
+    .red-code{
+        font-family: 'Consolas';
+        color: rgba(241,76,126);
+    }
+    .white-code{
+        font-family: 'Consolas';
+    }
+    
 
     .subheader{
         color: rgb(100,100,100);
@@ -182,13 +221,22 @@ body{
             font-style: italic;
             // margin-left: 10%;
     }
-        
+    
+    h3 { 
+        font-family: 'Consolas', sans-serif;
+        font-size: 18px;
+        color: rgb(50,150,255);
+     //    margin-left: 10%;
+             // margin-left: 5;
+             
+     }
         
     h2 {
             // color: rgb(210,210,210);
         font-size: 22px;
         font-family: 'Consolas', sans-serif;
-       color: rgb(50,150,255);
+       color: rgba(14, 144, 181);
+       text-align: right;
     /// font-style: italic;
             // margin-left: 5% px;
             // margin-right: 5% px;
@@ -197,9 +245,10 @@ body{
    
     h1 {
             // color: rgb(210,210,210);
-        font-size: 28px;
+        font-size: 36px;
         font-family: 'Consolas', sans-serif;
-       color: rgb(50,150,255);
+       color: rgba(14, 144, 181);
+       text-align: right;
     /// font-style: italic;
             // margin-left: 5% px;
             // margin-right: 5% px;
@@ -207,14 +256,7 @@ body{
     }
 
      
-    h3 { 
-       font-family: 'Consolas', sans-serif;
-       font-size: 18px;
-       color: rgb(50,150,255);
-    //    margin-left: 10%;
-            // margin-left: 5;
-            
-    }
+  
         
     li {
         font-family: 'Consolas', sans-serif;
@@ -230,7 +272,7 @@ body{
     
     .gridImg {
         grid-area: content;
-        width: 100%;
+        max-width: 350px;
         // margin-left:5%;
         // margin-right: 15%;
         padding-top: 2%;
@@ -241,21 +283,17 @@ body{
     .egImg {
         grid-area: content;
         // padding-right: 25px;
-        margin-left: 25%;
+        width: 75%;
+        height: 75%;
+        max-height: 400px;
+        max-width: 750px;
         float: center;
-        p {
-            color: rgb(50,150,255);
-        font-family: 'Consolas', sans-serif;
-        font-size: 18px;
-        text-align: left;
-        padding-right: 20%
-
-        }
-        img{
-            // padding-top: 25px;
-            padding-left: 25px;
-            padding-right: 25px;
-        }
+     
+        // img{
+        //     // padding-top: 25px;
+        //     padding-left: 25px;
+        //     padding-right: 25px;
+        // }
         // float:left;
         // top: 50%;
         // margin-left: 50%;
@@ -277,6 +315,15 @@ body{
         color: rgb(200,200,200);
         margin-top: 20px;
         margin-bottom: 50px;
+    }
+    .egText{
+        
+        font-family: 'Consolas', sans-serif;
+        font-size: 12px;
+        text-align: center;
+        max-width: 750px;
+      
+        
     }
 
 }
@@ -308,12 +355,13 @@ body{
     // background: linear-gradient(180deg, rgba(241,76,126,0.6), rgba(241,76,126));
     box-shadow: -5px 7px 9px rgba(0,0,0,0.1);
     font-family: 'Consolas', sans-serif;
+    margin-left: -10px;
     // margin-left: 25%;
 
     
     h1 {
         
-        font-size: 20px;
+        font-size: 24px;
         text-align:right;
         margin-right:15%;
         color: rgba(241,76,126);
@@ -321,7 +369,7 @@ body{
 
     h2 {
         margin-left: 20%;
-        font-size: 12px;
+        font-size: 14px;
         font-style: thin;
         text-align:right;
         margin-right:15%;
@@ -367,7 +415,7 @@ body{
   margin-top:2%;
 //   margin-bottom:0.5%;
   border-top: 1.25px solid rgb(241,76,126,0.5);
-//   margin-left: 25 px;
+//   margin-left: -10px;
 //   margin-right: 25 px;
 }
 
@@ -420,36 +468,36 @@ body{
     width: 10%;
     height: 10%;
     -webkit-transition: 2s;
+    max-width: 130px;
+    min-width: 50px;
 }
 #logo:hover{
     width: 11%;
     height: 11%;
+    max-width: 140px;
     -webkit-transition: 2s;
 }
-#nav-menu{
-    margin-left: 3%;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width:36px;
-    height: 36px;
-    box-shadow: -4px, 7px, 7px, rgba(0,0,0);
-    z-index: 21;
-}
+
 #nav-menu{
     padding:5px;
-    width:42px;
-    height:42px;
+    width:53px;
+    height:53px;
     box-shadow: -4px, 7px, 7px, rgba(0,0,0);
     -webkit-transition:2s;
     
 }
 #nav-menu:hover{
     padding:5px;
-    width:53px;
-    height:53px;
+    width:62px;
+    height:62px;
     -webkit-transition:2s;
     box-shadow: -4px, 7px, 7px, rgba(0,0,0);
     stroke-opacity: 50%;
+}
+
+#hero-img{
+    max-width:750px;
+    margin-top: -8%;
 }
 
 
