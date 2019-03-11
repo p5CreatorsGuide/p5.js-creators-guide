@@ -1,188 +1,125 @@
 <!DOCTYPE html>
-    <head>
-        <meta name="theme-color" content="#333333">
+<head>
+    <meta name="theme-color" content="#333333">
 
 
-       <link rel = "stylesheet" type = "text/css" href = "stylesheets/ebook-grids.css">
-       <title>        
-            p5.js Creator's Guide
-        </title>
-           <div class = "sidebar">
-               <img id = "nav-menu" src = "../image/nav-menu_map.svg"></img>
-          <p> <a href = "introduction.html">Prolog: Standing on the Shoulders of Giants</a> </p>
-          <p> <a href = "#">The Programming Language You're Learning</a> </p>
-            <p> <a href = "#">How to use the Creator's Guide: Online and Offline</a> </p>
-           <p> <a href = "chapter-1-vehicle-design.html">1: Vehicle Design</a> </p>
-           <p> <a href = "chapter-2-logo-design.html">2: Logo Design</a> </p>
-           <p> <a href = "chapter-3-scaling-to-advanced.html">3: Scaling to Advanced</a> </p>
-           <p> <a href = "chapter-4-landscape-design.html">4: Design a Landscape </a> </p>
-           <p> <a href = "chapter-3-scaling-to-advanced.html">3: Scaling to Advanced</a> </p>
-           <p> <a href = "chapter-4-landscape-design.html">4: Design a Landscape </a> </p>
+   <link rel = "stylesheet" type = "text/css" href = "stylesheets/ebook-grids.css">
+   <title>        
+        p5.js Creator's Guide
+    </title>
+       <div class = "sidebar">
+        <img id = "nav-menu" src = "drawing-design-edition/image/nav-menu_map.svg"></img>
+      <p> <a href = "introduction.html">Prolog: Standing on the Shoulders of Giants</a> </p>
+      <p> <a href = "#">The Programming Language You're Learning</a> </p>
+        <p> <a href = "#">How to use the Creator's Guide: Online and Offline</a> </p>
+       <p> <a href = "chapter-1-vehicle-design.html">1: Vehicle Design</a> </p>
+       <p> <a href = "chapter-2-logo-design.html">2: Logo Design</a> </p>
+       <p> <a href = "chapter-3-scaling-to-advanced.html">3: Scaling to Advanced</a> </p>
+       <p> <a href = "chapter-4-landscape-design.html">4: Design a Landscape </a> </p>
+       <p> <a href = "chapter-3-scaling-to-advanced.html">3: Scaling to Advanced</a> </p>
+       <p> <a href = "chapter-4-landscape-design.html">4: Design a Landscape </a> </p>
+    </div>
+    <span class = "wrapper">
+    <div id = "pageHeader">
+        <span>
+        <h1>
+            Foreword
+        </h1>
+
+        <img src = "drawing-design-edition/image/nav-menu_map.svg"></img>
+
+        <h2>
+           A creative approach to code.
+        </h2>
+       <a href = "https://editor.p5js.org/" target = "_blank"> <img id = "logo" src = "drawing-design-edition/image/p5js-logo.svg"></img></a>
+            <div id = "headerBreak"></div>
+        </span>
         </div>
-        <span class = "wrapper">
-        <div id = "pageHeader">
-            <span>
-            <h1>
-                Chapter 4: Design a Landscape
-            </h1>
-
-            <h2>
-               Illustrate with Shape, Color and Design Functions
-            </h2>
-           <a href = "https://editor.p5js.org/" target = "_blank"> <img id = "logo" src = "../image/p5js-logo.svg"></img></a>
-                <div id = "headerBreak"></div>
-            </span>
-            </div>
+</head>
     </head>
 
+
+
     
-
-    <!-- <body> -->
-        <div  class = "content">
-            <img id = "hero-img" src = "../image/c4-heroImg.svg"></img>
-            <p>
-                Although constantly visualizing the 'grid' of your project canvas can be
-                 overwhelming, that's not all we must at least be aware of when creating
-                  illustrations. There are two functions provided within every p5.js editor
-                  sketch or project: <span class = "blue-code" >function setup() { }</span>
-                and <span class = "blue-code">function draw() { }</span>. In order to understand
-                 how both of these functions work, we have to understand that our
-                  browsers, the software we use to request and view different web pages, interprets
-                   or reads our code line by line, in the order the lines of code were written.
- 
-            </p>
-            <br/>
+        <div class = "content">
+            
             <p class = "egText">
-                Although the programming canvas for your p5.js sketch is 
-                blank until you write some code, it helps to imagine a grid originating from 
-                the top left corner of your canvas (0,0) that increases from left to right across the 
-                X axis, and top to bottom along the Y axis. <br /><br />
-            </p>
-            <img class = "egImg" src = "../image/ch4/c4_editor-grid-overlay.png"></img> 
-            <br/>
-            <p class = "egText" ><br /> Each shape used in a p5.js sketch 
-                exists upon the (invisible) X, Y coordinate grid of your programming canvas (or HTML canvas, but more on that later).
+                Please note this page is a work in progress. Any suggestions on how to improve the accuracy or
+                accessibility would be much appreciated. The work presented here would not be possible
+                without the foundational efforts and outreach carried out by the Processing foundation.
+                Their excellent teachers, including Daniel Shiffman, Lauren McCarthy and # inspired these
+                 series of lessons that hope to form a non-traditional learning pathway for learners
+                 of any age seeking an introduction to basic Computer Science concepts. As a printmaking instructor
+                 turned Computer Science educator, I've witnessed, first-hand, a 
+                 broad demographic of learners engage with these concepts, even when they're far beyond their years
+                 Through the affodances of visual programming and creative ownership I hope the reach is greater.
+                 <br/>
+                <br />
+                Many of these lessons were created for the
+                p5.js was created by Lauren McCarthy and is developed by a community of collaborators,
+                 with support from the Processing Foundation and NYU ITP.
             </p>
             <br />
-            <p> 
-                Even though it may look as if our computer is executing our code in a single instant, 
-                JavaScript, the programming language that the p5.js library was built on,
-                 actually interprets our code from the first line that's written until the last.
-                 This is why when we begin illustrating with p5.js shape functions (like <span class = "blue-code">rect()</span> and <span class = "blue-code">ellipse()</span>),
-                  we notice that the final shape function called on the last line of our code is always 
-                  the top-most visible 'layer' on our canvas. Unless, of course, a loop or conditional 
-                  satement is in affect. (But we really should worry about understanding what those are that <i>after</i> we feel comfortable layering multiple shape function calls to design and illustrate our basic ideas.)
-            </p>
-            <br/>
-            <img src="../image/ch4/c4_star-outlines.svg"></img>
-            </br>
-            <p class= "egText">
-                    As you can see, there is more than one way we can design a star illustration
-                    using basic shape functions. But overlapping stroke lines can be distracting. Using noStroke(); and a 
-                   fill function, we remove any distracting outlines, presenting you with a complete, 
-                   complex shape.
-            </p>
-            </br>
-            </br>
-            <img src = "../image/ch4/c4_star-fills.svg"></img>
+            <br />
+            <!-- <p>
+                One of the most miraculous things about being human lies in the fact that we
+                 are able to teach and learn-- even from those who have lived long before us.
+                  Thanks to the miracle of the human brain, we are able to internalize knowledge that's shared and taught to us rather than having to rediscover something firsthand every time there's something new we must learn or do.
+            </p> -->
+            <h1>
+                How to use this guide?
+            </h1>
+
             <p>
-                It's as if every line of code that calls a shape function is telling your 
-                browser to cut that shape out of pixelated construction paper, and then glue it down on 
-                top of your programming canvas in the place you described-- regardless of whether or 
-                not something has already been drawn on that X, Y coordinate. This is also why when 
-                you include the <span class = "blue-code">background()</span> color function on the last line of your 
-                project's code, then the very last instruction your web browser would interpret and execute is
-                placing an opaque background color on top of all the visuals that are drawn before that final instruction.
+                These 18 lessons are split between three 'editions'.
+                I. Drawing and Design
+                II. Animation
+                II. Interaction
+
+                The create first, ask questions later method might present an unorthodox approach to
+                introductory Computer Science concepts, but it's one that really beckons readers
+                to internalize the abstractions their dealing with in a way that makes sense to them.
+                Making the intangible 'tangible' is what visual illusion and computer graphics are all about.
+                The more you can take these projects, source code, lessons and make them your own,
+                whether it's as simple as a color change or a complete reinvention-- the better.
             </p>
-            <br/>
-            <p>
-                Being able to slow down and break down each step the web browser is carrying out as 
-                a result of your code is a skill that naturally develops over time, and a very important
-                 one at that. Thankfully, programming visual projects makes it easier to form this understanding of how and when 
-              lines of JavaScript code we write are being executed, (at least within our p5.js sketch). <span class = "blue-code">function setup() { }</span> and 
-              <span class = "blue-code">function draw() { }</span> allow us to control the flow and order of our instructions even further.
-           
-            </p>
-            <br/>
-            <br/>
-            <br/>
 
 
-            <!-- <h1>
-                function setup( ) { }                
-            </h1> -->
-            <!-- illustration header font:36px -->
-            <img class = "setupVisual" src = "../image/function-setup.svg"></img>
-            <h2>
-                and Preparing your Project Canvas
-                <br /> with the createCanvas() Function
-            </h2>
-            <br />
+            <h1>
+                What is a Programming Language?
+            </h1> 
+
             <p>
-                You can think of <span class = "blue-code">function setup() { }</span> as your program's start up process. 
-                Just as photographers need to load film into older cameras and painters 
-                need to prepare their brushes and canvas before they begin painting, 
-                p5.js requires a specific start up procedure before we're able to draw 
-                anything to our own programming canvas by writing code.
+                A programming language is a way of providing instructions to the computer.
+                 All programs, whether they’re a game like Minecraft and Zelda or applications like
+calculators, Google Chrome or MicrosoftWord are written in some kind of programming language.
             </p>
-        </br>
-        <p>
-                Even if you were to leave the curly brackets <span class = "blue-code">{ }</span> 
-                of <span class = "blue-code">function setup() { }</span>
-            empty, your p5.js code would still cary out a beginning procedure which, by
-             default, provides your screen with a very tiny 100 x 100 pixel canvas or drawing space 
-             (which can be changed in the settings menu of your project). One way to take advantage of function setup ( ) by creating a canvas with specific diemensions using:
-        </p>
-    </br>
-        <img src = "../image/ch4/create-canvas.svg"></img>
-    </br>
-    
-            <p class = "egText">The 
-                    <span class = "blue-code">createCanvas(</span>
-                    <span class = "red-code">width</span>
-                    <span class = "blue-code">,</span>
-                    <span class = "red-code">height</span>
-                     <span class = "blue-code">);</span> 
-                     function allows you to specify what size you'd like your programming canvas to be.
-                    
-            </p>
-            <br />
-            <br />
-            <br />
-            <h1>In Closing...</h1>
-        </br>
+            
+            
+            <h1>
+                What is JavaScript?
+            </h1>
+            
             <p>
-               Again, it’s easy to underestimate what kinds of shapes we can program. If there are
-                certain shapes that feel impossible to realize in code, try drawing them out 
-                on grid paper beforehand. After you've successfully combined simple shapes
-                to create more complex ones, try attempting to illustrate an entire landscape 
-                inside the curly brackets <span class = "blue-code">{ }</span> of 
-                <span class = "blue-code">function setup() { }</span>.
+                JavaScript is the most widely used programming language in the world. It is used to power nearly every website on the internet. JavaScript is not to be confused with Java, which is a different programming language altogether. Where most programming languages need to be compiled (IE. translated) into machine code locally on your device, JavaScript is interpreted line by line thanks to our web browsers.
             </p>
-            <br />
+
+
+            <h1>
+                What is p5.js?
+            </h1>
+
             <p>
-                Look over the example project by clicking the p5.js logo in the right-hand corner if you get stuck. Or, check out
-                some examples others were kind enough to share.
+                p5.js is a specific JavaScript library. It enhances JavaScripts capabilities by making it simpler to program graphics and animations thanks to contributions from a community of open source programmers!
             </p>
-        </br>
-            <p class = "egText">
-                Please reach out with your project via email: <span class = "red-code">
-                    <a>talleykristian@gmail.com</a></span> if you'd like 
-                to share your example here. Preference given to p5 editor links with screenshots attached!
-            </p>
-            <br />
+
             <p>
-                If you feel adventureous, go ahead and attempt your landscape illustration inside the
-                curly brackets <span class = "blue-code">{ }</span> of <span class = "blue-code">
-                    function draw() { }</span>, although it's quite a bit different than
-                    <span class = "blue-code">function setup() { }</span>. We'll be
-                    exploring how, why and what possibilities these differences unlocks for us in the <a>next chapter.</a>
+            Learn more about the p5.js library from <a href ="www.p5js.org">www.p5js.org</a> 
             </p>
+
+
+
            
-          
-        </div>
-        <div class = "footer"></div>
-    </div> 
-    <!-- </body> -->
+   </body>
 
 </html>
