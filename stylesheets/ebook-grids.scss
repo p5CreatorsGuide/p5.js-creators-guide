@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     // grid-gap: 10px;
     // grid-column-gap: 20px;
-    grid-template-columns: 30% 70% 0%;
+    grid-template-columns: 10% 80% 10%;
     grid-template-areas:
     "header header header"
     "sidebar content content"
@@ -113,7 +113,16 @@ img{
         
         font-family: 'Consolas', sans-serif;
         font-size: 16px;
+        padding: 2%;
+        padding-top: 1%;
+        margin-left: 3%;
         
+    }
+    h3 {
+        font-family: 'Consolas', sans-serif;
+        font-size: 16px;
+        color: rgba(10,10,10, 0.8);
+        margin-left: 2%;
     }
     a {
         -webkit-transition: 1s;
@@ -127,6 +136,7 @@ img{
         color: rgb(10,155,255);
         font-family: 'consolas', sans-serif;
         font-size: 14px;
+        
         
     }
     
@@ -165,9 +175,42 @@ img{
         text-align: left;
         text-indent: 52px;
         line-height: 1.8;
-        margin-left: -20%;
+        // margin-left: -20%;
         
         // margin-left: 25%;
+    }
+    a {
+       
+        color: rgba(255,255,255, 0.8);
+        font-family: 'Consolas', sans-serif;
+        font-size: 18px;
+        -webkit-transition: 2s;
+        text-align: center;
+        text-decoration: none;
+       
+        
+    }
+    a:hover {
+        
+        color: rgb(14,144,181);
+        font-family: 'consolas', sans-serif;
+        font-size: 18px;
+        -webkit-transition: 2s;
+        
+       
+        
+    }
+    a:visited {
+        color: rgb(14,144,181);
+    }
+    .inactive{
+        color: rgba(255, 255, 255, 0.279);
+        font-family: 'Consolas', sans-serif;
+        font-size: 18px;
+        -webkit-transition: 2s;
+        text-align: center;
+        text-decoration: none;
+        
     }
 
     
@@ -175,11 +218,19 @@ img{
         width: 75%;
         height: 75%;
     }
+    #hero-img-sm{
+        max-width:350px;
+        margin-top: -14%;
+        width: 75%;
+        height: 75%; 
+        align: center;
+    }
     #hero-img{
         max-width:750px;
         margin-top: -8%;
         width: 75%;
         height: 75%;
+    
         
     }
     #hero-img:hover{
@@ -408,7 +459,7 @@ img{
 #headerBreak {
     grid-area: header;
     margin-top: 3px;
-    // margin-bottom: 6px;
+    // mfrgin-bottom: 6px;
     width: 100%;
     z-index: 1;
     // margin-left: 15vh;
