@@ -3,7 +3,7 @@ new p5();
 let w = 192;
 let magicAngle;
 let maxD;
-let howMany = 36*18;
+let howMany = 42*24;
 let orthoX;
 let orthoY;
 let orthoZ = w*w+4096;
