@@ -33,27 +33,27 @@ img {
 }
 .sidebar:hover p {
   font-family: "Consolas", sans-serif;
-  font-size: 16px;
+  font-size: 21px;
   padding: 2%;
 }
 .sidebar:hover a {
   color: #0a0a0a;
   font-family: "Consolas", sans-serif;
-  font-size: 14px;
+  font-size: 21px;
 }
 .sidebar:hover a:hover {
   color: #0a9bff;
   font-family: "consolas", sans-serif;
-  font-size: 14px;
+  font-size: 24px;
 }
 .sidebar:hover li {
   font-family: "Consolas", sans-serif;
-  font-size: 14px;
+  font-size: 21px;
 }
 .sidebar:hover li:hover {
   color: #0a9bff;
   font-family: "Consolas", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .sidebar {
@@ -69,14 +69,14 @@ img {
 }
 .sidebar p {
   font-family: "Consolas", sans-serif;
-  font-size: 16px;
+  font-size: 21px;
   padding: 2%;
   padding-top: 1%;
   margin-left: 3%;
 }
 .sidebar h3 {
   font-family: "Consolas", sans-serif;
-  font-size: 16px;
+  font-size: 26px;
   color: rgba(10, 10, 10, 0.8);
   margin-left: 2%;
 }
@@ -84,21 +84,21 @@ img {
   -webkit-transition: 1s;
   color: rgba(10, 10, 10, 0.1);
   font-family: "Consolas", sans-serif;
-  font-size: 14px;
+  font-size: 21px;
 }
 .sidebar a:hover {
   color: #0a9bff;
   font-family: "consolas", sans-serif;
-  font-size: 14px;
+  font-size: 24px;
 }
 .sidebar li {
   font-family: "Consolas", sans-serif;
-  font-size: 14px;
+  font-size: 21px;
 }
 .sidebar li:hover {
   color: #0a9bff;
   font-family: "Consolas", sans-serif;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 .content {
@@ -109,7 +109,7 @@ img {
 .content p {
   color: rgba(255, 255, 255, 0.7);
   font-family: "quenalas", sans-serif;
-  font-size: 16px;
+  font-size: 21px;
   text-align: left;
   text-indent: 52px;
   line-height: 1.8;
@@ -117,7 +117,7 @@ img {
 .content a {
   color: rgba(255, 255, 255, 0.8);
   font-family: "Consolas", sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   -webkit-transition: 2s;
   text-align: center;
   text-decoration: none;
@@ -125,7 +125,7 @@ img {
 .content a:hover {
   color: #0e90b5;
   font-family: "consolas", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   -webkit-transition: 2s;
 }
 .content a:visited {
@@ -182,16 +182,16 @@ img {
 .content h4 {
   text-align: left;
   color: #646464;
-  font-size: 16px;
+  font-size: 24px;
   font-style: italic;
 }
 .content h3 {
   font-family: "Consolas", sans-serif;
-  font-size: 18px;
+  font-size: 26px;
   color: #3296ff;
 }
 .content h2 {
-  font-size: 22px;
+  font-size: 28px;
   font-family: "Consolas", sans-serif;
   color: #0e90b5;
   text-align: right;
@@ -242,7 +242,7 @@ img {
 }
 .content .egText {
   font-family: "Consolas", sans-serif;
-  font-size: 12px;
+  font-size: 21px;
   text-align: center;
   max-width: 750px;
 }
@@ -263,14 +263,14 @@ img {
   margin-left: -10px;
 }
 #pageHeader h1 {
-  font-size: 24px;
+  font-size: 36px;
   text-align: right;
   margin-right: 15%;
   color: #f14c7e;
 }
 #pageHeader h2 {
   margin-left: 20%;
-  font-size: 14px;
+  font-size: 24px;
   font-style: thin;
   text-align: right;
   margin-right: 15%;
@@ -329,21 +329,21 @@ img {
   width: 10%;
   height: 10%;
   -webkit-transition: 2s;
-  max-width: 130px;
-  min-width: 50px;
+  max-width: 150px;
+  min-width: 100px;
 }
 
 #logo:hover {
   width: 11%;
   height: 11%;
-  max-width: 140px;
+  max-width: 165px;
   -webkit-transition: 2s;
 }
 
 #nav-menu {
-  padding: 5px;
-  width: 53px;
-  height: 53px;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
   box-shadow: -4px, 7px, 7px, black;
   -webkit-transition: 2s;
 }
