@@ -2,7 +2,7 @@ function openNav() {
     if(window.innerWidth <= 400){
         document.getElementById("mySidebar").style.width = "65%";
     }else{
-        document.getElementById("mySidebar").style.width = "45%";
+        document.getElementById("mySidebar").style.width = "35%";
 
     }
 

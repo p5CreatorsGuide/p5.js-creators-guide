@@ -6,6 +6,14 @@ body {
   background-color: #333333;
 }
 
+.closebtn {
+  float: right;
+  padding: 2%;
+  width: 100px;
+  height: 100px;
+  position: sticky;
+}
+
 .wrapper {
   display: grid;
   flex-direction: column;
@@ -37,13 +45,13 @@ img {
 }
 .sidebar h3 {
   font-family: "Inconsolata", monospace;
-  font-size: 28px;
+  font-size: 26px;
   color: rgba(10, 10, 10, 0.8);
   margin-left: 32px;
 }
 .sidebar p {
   font-family: "Inconsolata", monospace;
-  font-size: 24px;
+  font-size: 22px;
   padding: 2%;
   margin-left: 24px;
 }
@@ -51,14 +59,14 @@ img {
   text-decoration: none;
   color: #0a0a0a;
   font-family: "Inconsolata", monospace;
-  font-size: 24px;
+  font-size: 22px;
   margin-left: 24px;
   -webkit-transition: 2s;
 }
 .sidebar a:hover {
   color: #0a9bff;
   font-family: "Inconsolata", monospace;
-  font-size: 26px;
+  font-size: 24px;
   -webkit-transition: 2s;
 }
 .sidebar li {
@@ -215,30 +223,19 @@ img {
   margin-left: 10%;
   margin-bottom: 12px;
 }
-.content .gridImg {
-  grid-area: content;
-  max-width: 350px;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  position: center;
-}
-.content .egImg {
-  grid-area: content;
-  width: 75%;
-  height: 75%;
-  max-height: 400px;
-  max-width: 750px;
-  float: center;
-}
 .content .instructionalImg {
-  width: 80%;
-  height: 80%;
-  margin-left: 5%;
-  margin-right: 10%;
-  margin-top: 10%;
+  width: 100%;
+  height: 100%;
+  margin-left: 15%;
+  margin-right: 25%;
+  margin-top: 5%;
   margin-bottom: 5%;
   max-width: 550px;
   max-height: 400px;
+}
+.content .instructionalImg:hover {
+  max-width: 565px;
+  max-height: 415px;
 }
 .content .categ {
   font-style: italic;
@@ -272,6 +269,7 @@ img {
 #pageHeader h1 {
   font-size: 36px;
   text-align: right;
+  font-style: thin;
   margin-right: 15%;
   color: #f14c7e;
 }
@@ -336,14 +334,14 @@ img {
   width: 10%;
   height: 10%;
   -webkit-transition: 2s;
-  max-width: 150px;
-  min-width: 100px;
+  max-width: 120px;
+  min-width: 90px;
 }
 
 #logo:hover {
   width: 11%;
   height: 11%;
-  max-width: 165px;
+  max-width: 145px;
   -webkit-transition: 2s;
 }
 
