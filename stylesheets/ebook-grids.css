@@ -18,87 +18,49 @@ img {
   -webkit-transition: 2s;
 }
 
-.sidebar:hover {
+.sidebar {
   position: fixed;
   flex-direction: column;
   height: 100%;
-  width: 30%;
+  width: 0%;
   -webkit-transition: 2s;
   margin-top: -8px;
   margin-left: -8px;
+  -webkit-transition: 2s;
+  overflow: hidden;
+  z-index: 9999999;
   grid-area: sidebar;
   background-color: rgba(241, 76, 126, 0.9);
   z-index: 20;
   box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.5);
 }
-.sidebar:hover p {
-  font-family: "Consolas", sans-serif;
-  font-size: 21px;
-  padding: 2%;
-}
-.sidebar:hover a {
-  color: #0a0a0a;
-  font-family: "Consolas", sans-serif;
-  font-size: 21px;
-}
-.sidebar:hover a:hover {
-  color: #0a9bff;
-  font-family: "consolas", sans-serif;
-  font-size: 24px;
-}
-.sidebar:hover li {
-  font-family: "Consolas", sans-serif;
-  font-size: 21px;
-}
-.sidebar:hover li:hover {
-  color: #0a9bff;
-  font-family: "Consolas", sans-serif;
-  font-size: 24px;
-}
-
-.sidebar {
-  flex-direction: column;
-  position: fixed;
-  height: 10%;
-  width: 10%;
-  -webkit-transition: 2s;
-  overflow: hidden;
-  z-index: 30;
-  margin-top: -8px;
-  margin-left: -8px;
-}
 .sidebar p {
   font-family: "Consolas", sans-serif;
   font-size: 21px;
   padding: 2%;
-  padding-top: 1%;
-  margin-left: 3%;
-}
-.sidebar h3 {
-  font-family: "Consolas", sans-serif;
-  font-size: 26px;
-  color: rgba(10, 10, 10, 0.8);
-  margin-left: 2%;
 }
 .sidebar a {
-  -webkit-transition: 1s;
-  color: rgba(10, 10, 10, 0.1);
+  color: #0a0a0a;
   font-family: "Consolas", sans-serif;
   font-size: 21px;
+  -webkit-transition: 2s;
 }
 .sidebar a:hover {
   color: #0a9bff;
   font-family: "consolas", sans-serif;
   font-size: 24px;
+  -webkit-transition: 2s;
 }
 .sidebar li {
   font-family: "Consolas", sans-serif;
   font-size: 21px;
+  -webkit-transition: 2s;
 }
 .sidebar li:hover {
   color: #0a9bff;
   font-family: "Consolas", sans-serif;
   font-size: 24px;
+  -webkit-transition: 2s;
 }
 
 .content {
@@ -139,15 +101,29 @@ img {
   text-align: center;
   text-decoration: none;
 }
+.content .inactive:hover {
+  color: rgba(255, 255, 255, 0.279);
+  font-family: "Consolas", sans-serif;
+  font-size: 18px;
+  -webkit-transition: 2s;
+  text-align: center;
+  text-decoration: none;
+}
 .content .setupVisual {
   width: 75%;
   height: 75%;
 }
 .content #hero-img-sm {
   max-width: 350px;
-  margin-top: -14%;
-  width: 75%;
-  height: 75%;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 100%;
+  height: 100%;
+  margin-top: -12%;
+  margin-bottom: -12%;
+  grid-area: content;
+  position: center;
+  float: center;
 }
 .content #hero-img {
   max-width: 750px;
@@ -341,20 +317,20 @@ img {
 }
 
 #nav-menu {
-  padding: 10%;
-  width: 100%;
-  height: 100%;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
   box-shadow: -4px, 7px, 7px, black;
   -webkit-transition: 2s;
+  position: fixed;
+  z-index: 99999;
 }
 
 #nav-menu:hover {
   padding: 5px;
-  width: 62px;
-  height: 62px;
+  width: 112px;
+  height: 112px;
   -webkit-transition: 2s;
-  box-shadow: -4px, 7px, 7px, black;
-  stroke-opacity: 50%;
 }
 
 #hero-img {
