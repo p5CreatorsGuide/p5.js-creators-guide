@@ -27,45 +27,48 @@ img {
   margin-top: -8px;
   margin-left: -8px;
   -webkit-transition: 2s;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 9999999;
+  text-align: left;
   grid-area: sidebar;
   background-color: rgba(241, 76, 126, 0.9);
   z-index: 20;
   box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.5);
 }
 .sidebar h3 {
-  font-family: "Consolas", sans-serif;
-  font-size: 26px;
+  font-family: "Inconsolata", monospace;
+  font-size: 28px;
   color: rgba(10, 10, 10, 0.8);
-  margin-left: 2%;
+  margin-left: 32px;
 }
 .sidebar p {
-  font-family: "Consolas", sans-serif;
-  font-size: 21px;
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
   padding: 2%;
+  margin-left: 24px;
 }
 .sidebar a {
   text-decoration: none;
   color: #0a0a0a;
-  font-family: "Consolas", sans-serif;
-  font-size: 21px;
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+  margin-left: 24px;
   -webkit-transition: 2s;
 }
 .sidebar a:hover {
   color: #0a9bff;
-  font-family: "consolas", sans-serif;
-  font-size: 24px;
+  font-family: "Inconsolata", monospace;
+  font-size: 26px;
   -webkit-transition: 2s;
 }
 .sidebar li {
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 21px;
   -webkit-transition: 2s;
 }
 .sidebar li:hover {
   color: #0a9bff;
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 24px;
   -webkit-transition: 2s;
 }
@@ -76,8 +79,8 @@ img {
   margin-top: 25%;
 }
 .content p {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: "quenalas", sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Questrial", sans-serif;
   font-size: 21px;
   text-align: left;
   text-indent: 52px;
@@ -85,7 +88,7 @@ img {
 }
 .content a {
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 21px;
   -webkit-transition: 2s;
   text-align: center;
@@ -93,7 +96,7 @@ img {
 }
 .content a:hover {
   color: #0e90b5;
-  font-family: "consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 24px;
   -webkit-transition: 2s;
 }
@@ -102,7 +105,7 @@ img {
 }
 .content .inactive {
   color: rgba(255, 255, 255, 0.279);
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 18px;
   -webkit-transition: 2s;
   text-align: center;
@@ -110,7 +113,7 @@ img {
 }
 .content .inactive:hover {
   color: rgba(255, 255, 255, 0.279);
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 18px;
   -webkit-transition: 2s;
   text-align: center;
@@ -133,31 +136,50 @@ img {
   float: center;
 }
 .content #hero-img {
-  max-width: 750px;
-  margin-top: -8%;
-  width: 75%;
-  height: 75%;
-}
-.content #hero-img:hover {
-  max-width: 755px;
-  margin-top: -8%;
-  width: 75%;
-  height: 75%;
+  max-width: 650px;
+  margin-top: -5%;
+  margin-left: 10%;
+  margin-right: 15%;
+  width: 100%;
+  height: 100%;
+  grid-area: content;
+  position: center;
+  float: center;
 }
 .content .blue-code {
-  font-family: "Consolas";
+  font-family: "Inconsolata", monospace;
   color: #0e90b5;
+  -webkit-transition: 2s;
+}
+.content .blue-code:hover {
+  font-family: "Inconsolata", monospace;
+  color: #0e90b5;
+  font-size: 23px;
+  -webkit-transition: 2s;
 }
 .content .red-code {
-  font-family: "Consolas";
+  font-family: "Inconsolata", monospace;
   color: #f14c7e;
+  -webkit-transition: 2s;
+}
+.content .red-code:hover {
+  font-family: "Inconsolata", monospace;
+  color: #f14c7e;
+  font-size: 23px;
+  -webkit-transition: 2s;
 }
 .content .white-code {
-  font-family: "Consolas";
+  -webkit-transition: 2s;
+  font-family: "Inconsolata", monospace;
+}
+.content .white-code:hover {
+  font-family: "Inconsolata", monospace;
+  font-size: 23px;
+  -webkit-transition: 2s;
 }
 .content .subheader {
   color: #646464;
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 18px;
   text-align: center;
   margin-bottom: 5%;
@@ -169,24 +191,24 @@ img {
   font-style: italic;
 }
 .content h3 {
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 26px;
   color: #3296ff;
 }
 .content h2 {
   font-size: 28px;
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   color: #0e90b5;
   text-align: right;
 }
 .content h1 {
   font-size: 36px;
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   color: #0e90b5;
   text-align: right;
 }
 .content li {
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 24px;
   font-style: italic;
   color: #969696;
@@ -215,6 +237,8 @@ img {
   margin-right: 10%;
   margin-top: 10%;
   margin-bottom: 5%;
+  max-width: 550px;
+  max-height: 400px;
 }
 .content .categ {
   font-style: italic;
@@ -224,7 +248,7 @@ img {
   margin-bottom: 50px;
 }
 .content .egText {
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   font-size: 21px;
   text-align: center;
   max-width: 750px;
@@ -242,7 +266,7 @@ img {
   background-color: white;
   background: linear-gradient(180deg, #333333, #333333f6);
   box-shadow: -5px 7px 9px rgba(0, 0, 0, 0.1);
-  font-family: "Consolas", sans-serif;
+  font-family: "Inconsolata", monospace;
   margin-left: -10px;
 }
 #pageHeader h1 {
@@ -338,11 +362,6 @@ img {
   width: 112px;
   height: 112px;
   -webkit-transition: 2s;
-}
-
-#hero-img {
-  max-width: 750px;
-  margin-top: -8%;
 }
 
 /*# sourceMappingURL=ebook-grids.css.map */

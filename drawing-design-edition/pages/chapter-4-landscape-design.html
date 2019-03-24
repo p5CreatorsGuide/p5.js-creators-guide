@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-    <head>
-        <meta name="theme-color" content="#333333">
-
-
-       <link rel = "stylesheet" type = "text/css" href = "../../stylesheets/ebook-grids.css">
-       <title>        
-            p5.js Creator's Guide
-        </title>
+<head>
+    <meta name="theme-color" content="#333333">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,600,700" rel="stylesheet"> 
+    
+    <link rel = "stylesheet" type = "text/css" href = "../../stylesheets/ebook-grids.css">
+    <script src = "../../scripts/sidebar_open-close.js"></script>
+    <title>        
+        p5.js Creator's Guide
+    </title>
+</head>
        
-           <div class = "sidebar">
-               <img id = "nav-menu" src = "../image/nav-menu_map.svg"></img>
+           <div id = "mySidebar" class = "sidebar">
+               <a href = "javascript:void(0)" class = "closebtn" onclick="closeNav()">&times;</a>
                <p> <a href = "../../index.html">Introduction</a> </p>
                <h3>Drawing and Design Lessons</h4>
                 <p> <a href = "drawing-design-edition/pages/chapter-1-vehicle-design.html">1: Design a Dream Mode of Transport</a> </p>
@@ -27,7 +30,9 @@
                 <h3>Glossary</h3>
         </div>
         <span class = "wrapper">
-        <div id = "pageHeader">
+            <span onclick="openNav()"> <img id = "nav-menu" src = "../image/nav-menu_map.svg"></img></span>
+
+            <div id = "pageHeader">
             <span>
             <h1>
                 Chapter 4: Design a Landscape
@@ -40,7 +45,6 @@
                 <div id = "headerBreak"></div>
             </span>
             </div>
-    </head>
 
     
 

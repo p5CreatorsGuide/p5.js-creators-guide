@@ -1,5 +1,10 @@
 function openNav() {
-    document.getElementById("mySidebar").style.width = "50%";
+    if(window.innerWidth <= 400){
+        document.getElementById("mySidebar").style.width = "65%";
+    }else{
+        document.getElementById("mySidebar").style.width = "45%";
+
+    }
 
     document.getElementById("nav-menu").style.width = "0";
 }
