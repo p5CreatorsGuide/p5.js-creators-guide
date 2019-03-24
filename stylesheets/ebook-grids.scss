@@ -63,6 +63,13 @@ img{
     z-index: 20;
     box-shadow: 7px 7px 9px rgba(0,0,0,0.5);
     // border-right: 3px solid rgb(100,100,100);
+    h3 {
+                font-family: 'Consolas', sans-serif;
+                font-size: 26px;
+                color: rgba(10,10,10, 0.8);
+                margin-left: 2%;
+            }
+    
     p {
        
         font-family: 'Consolas', sans-serif;
@@ -70,6 +77,7 @@ img{
         padding: 2%;
     }
     a {
+        text-decoration: none;
        
         color: rgb(10,10,10);
         font-family: 'Consolas', sans-serif;

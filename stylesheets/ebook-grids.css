@@ -34,12 +34,19 @@ img {
   z-index: 20;
   box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.5);
 }
+.sidebar h3 {
+  font-family: "Consolas", sans-serif;
+  font-size: 26px;
+  color: rgba(10, 10, 10, 0.8);
+  margin-left: 2%;
+}
 .sidebar p {
   font-family: "Consolas", sans-serif;
   font-size: 21px;
   padding: 2%;
 }
 .sidebar a {
+  text-decoration: none;
   color: #0a0a0a;
   font-family: "Consolas", sans-serif;
   font-size: 21px;
