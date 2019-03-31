@@ -12,7 +12,7 @@ body{
     padding: 2%;
     width: 100px;
     height: 100px;
-    position: sticky;
+    position: relative;
 }
 .wrapper {
     display: grid;
@@ -46,7 +46,11 @@ body{
      }
 }
 
-
+@media (max-width: 540px) {
+    body {
+        font-size:21px !important;
+    }
+}
 
 img{
     -webkit-transition: 2s;

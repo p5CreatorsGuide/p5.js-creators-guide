@@ -23,7 +23,7 @@ function openNav() {
     if(w <= 600){
         document.getElementById("mySidebar").style.width = "70%";
     }else{
-        document.getElementById("mySidebar").style.width = "45%";
+        document.getElementById("mySidebar").style.width = "70%";
 
     }
 

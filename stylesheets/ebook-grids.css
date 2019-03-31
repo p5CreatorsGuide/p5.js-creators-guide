@@ -11,7 +11,7 @@ body {
   padding: 2%;
   width: 100px;
   height: 100px;
-  position: sticky;
+  position: relative;
 }
 
 .wrapper {
@@ -22,6 +22,11 @@ body {
   max-width: 1024px;
 }
 
+@media (max-width: 540px) {
+  body {
+    font-size: 21px !important;
+  }
+}
 img {
   -webkit-transition: 2s;
 }
