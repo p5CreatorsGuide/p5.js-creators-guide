@@ -26,6 +26,8 @@ function openNav() {
         document.getElementById("mySidebar").style.width = "45%";
 
     }
+
+    document.getElementById("nav-menu").style.width = "0";
 }
 
 function closeNav() {
