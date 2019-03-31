@@ -1,12 +1,31 @@
+function getWidth() {
+    if (self.innerWidth) {
+      return self.innerWidth;
+    }
+  
+    if (document.documentElement && document.documentElement.clientWidth) {
+      return document.documentElement.clientWidth;
+    }
+  
+    if (document.body) {
+      return document.body.clientWidth;
+    }
+  }
+
+
+let w = getWidth();
+
+
+
+
+
 function openNav() {
-    if(window.innerWidth <= 400){
-        document.getElementById("mySidebar").style.width = "65%";
+    if(w <= 600){
+        document.getElementById("mySidebar").style.width = "70%";
     }else{
-        document.getElementById("mySidebar").style.width = "35%";
+        document.getElementById("mySidebar").style.width = "45%";
 
     }
-
-    document.getElementById("nav-menu").style.width = "0";
 }
 
 function closeNav() {
