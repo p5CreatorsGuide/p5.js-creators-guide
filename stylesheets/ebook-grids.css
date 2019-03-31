@@ -8,11 +8,16 @@ body {
 }
 
 .closebtn {
-  float: right;
-  padding: 2%;
-  width: 100px;
-  height: 100px;
-  position: relative;
+  float: left;
+  width: 60px;
+  height: 60px;
+  transition-delay: 1s;
+}
+
+#closeNav {
+  width: 0px;
+  padding: 5%;
+  -webkit-transition: 2s;
 }
 
 .wrapper {
@@ -102,8 +107,8 @@ img {
   font-family: "Questrial", sans-serif;
   font-size: 21px;
   text-align: left;
-  text-indent: 36px;
-  line-height: 64px;
+  text-indent: 28px;
+  line-height: 48px;
   position: center;
   display: inline-block;
   margin-right: 5%;
@@ -127,6 +132,7 @@ img {
   color: #0e90b5;
 }
 .content .inactive {
+  grid-area: content;
   color: rgba(255, 255, 255, 0.279);
   font-family: "Inconsolata", monospace;
   font-size: 18px;
@@ -226,7 +232,6 @@ img {
   font-family: "Inconsolata", monospace;
   color: #0e90b5;
   text-align: right;
-  margin-bottom: -15px;
   max-width: 90%;
 }
 .content li {

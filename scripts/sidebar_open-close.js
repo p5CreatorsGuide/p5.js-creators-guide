@@ -26,11 +26,13 @@ function openNav() {
         document.getElementById("mySidebar").style.width = "750px";
 
     }
-
+    document.getElementById("closeNav").style.width = "21px";
+    document.getElementById("closeNav").style.float = "right";
     document.getElementById("nav-menu").style.width = "0";
 }
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("closeNav").style.width = "0";
     document.getElementById("nav-menu").style.width = "100px";
 }

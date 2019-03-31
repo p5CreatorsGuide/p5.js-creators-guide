@@ -9,11 +9,17 @@ body{
     overflow-x: hidden;
 }
 .closebtn{
-    float: right;
-    padding: 2%;
-    width: 100px;
-    height: 100px;
-    position: relative;
+    float: left;
+    // padding: 2%;
+    width: 60px;
+    height: 60px;
+    // position: absolute;
+    transition-delay: 1s;
+}
+#closeNav{
+    width: 0px;
+    padding: 5%;
+    -webkit-transition: 2s;
 }
 .wrapper {
     display: grid;
@@ -153,8 +159,8 @@ img{
         font-family: 'Questrial', sans-serif;
         font-size: 21px;
         text-align: left;
-        text-indent: 36px;
-        line-height: 64px;
+        text-indent: 28px;
+        line-height: 48px;
         position: center;
         display: inline-block;
         margin-right: 5%;
@@ -185,6 +191,7 @@ img{
         color: rgb(14,144,181);
     }
     .inactive{
+        grid-area: content;
         color: rgba(255, 255, 255, 0.279);
         font-family: 'Inconsolata', monospace;
         font-size: 18px;
@@ -319,7 +326,7 @@ img{
         font-family: 'Inconsolata', monospace;
        color: rgba(14, 144, 181);
        text-align: right;
-       margin-bottom:-15px;
+    //    margin-bottom:-15px;
     //    margin-right: 5%;
        max-width: 90%;
     /// font-style: italic;
