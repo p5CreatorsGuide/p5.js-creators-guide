@@ -1,62 +1,66 @@
 <!DOCTYPE html>
-    <head>
+<head>
         <meta name="theme-color" content="#333333">
-       <link rel = "stylesheet" type = "text/css" href = "../stylesheets/ebook-grids.css">
-       <link href="https://fonts.googleapis.com/css?family=Montserrat:500,500i,600,700" rel="stylesheet"> 
-        
-       <title>        
-            p5.js Creator's Guide
-        </title>
-           <div class = "sidebar">
-          <p> <a href = "#">Standing on the Shoulders of Giants</a> </p>
-          <p> <a href = "#">The Language You're Learning</a> </p>
-            <p> <a href = "#">How to use the Creator's Guide : Online and Offline</a> </p>
-           <p> <a href = "#">Chapter 1: Vehicle Design</a> </p>
-           <p> <a href = "#">Chapter 2 : Logo Design</a> </p>
-           <p> <a href = "#">Chapter 3 : Scaling to Advanced</a> </p>
-           <p> <a href = "#">Chapter 4 : Design a Landscape </a> </p>
-        </div>
-        <span class = "wrapper">
-        <div id = "pageHeader">
-            <span>
-            <h1>
-                Chapter 2: Logo Design
-            </h1>
-
-            <h2 class = "sub-header">
-                Remake a Logo Design or Create your Own
-            </h2>
-            <img src = "../image/cn-c.jpg"></img>
+            
+            </div>
+           <link rel = "stylesheet" type = "text/css" href = "../../stylesheets/ebook-grids.css">
+           <link href="https://fonts.googleapis.com/css?family=Inconsolata|Questrial" rel="stylesheet">
+           <script src = "../../scripts/sidebar_open-close.js"></script>
+    
+           <title>        
+                p5.js Creator's Guide
+            </title>
+    </head>
+               <div id = "mySidebar" class = "sidebar">
+                <a style = "font-size: 0px;" href="javascript:void(0)" onclick="closeNav()">&times;
+                    <img id = "closeNav" class = "closebtn" src = "../../common-components/images/closebtn-icon.svg"></img>
+                    </a>  
+                   <p> <a href = "../../index.html">Introduction</a> </p>
+                   <h3>Drawing and Design Lessons</h3>
+                    <p> <a href = "./chapter-1-vehicle-design.html">1: Build a Vehicle Using Shape Functions</a> </p>
+                    <p> <a href = "./chapter-2-logo-design.html">2: Design a Logo Using Color and Design Functions</a> </p>
+                    <p> <a href = "./chapter-4-landscape-design.html">3: Illustrate a Landscape Using Everything You've Learned </a> </p>
+                    <h3>Animation Lessons</h3>
+                    <p> <a href = "#">...</a> </p>
+                    <h3>Interaction Lessons</h3>
+                    <p> <a href = "#">... </a> </p>
+                    <br />
+                    ...
+                    <br/>
+                    <h3>Table of Contents</h3>
+                    <br />
+                    <h3>Glossary</h3>
+            </div>
+            <span class = "wrapper">
+                   <span onclick="openNav()"> <img id = "nav-menu" src = "../image/nav-menu_map.svg"></img></span>
+            <div id = "pageHeader">
+                <span>
+                <h1>
+                    Chapter 2: Design a Logo
+                </h1>
+                
+                <h2 class = "subheader">
+                   An Introduction to p5.js Color and Design Functions
+                </h2>
+                <a href = "https://editor.p5js.org/" target = "_blank"> <img id = "logo" src = "../image/p5js-logo.svg"></img></a>
                 <div id = "headerBreak"></div>
             </span>
+               
             </div>
-    </head>
 
     
 
     <!-- <body> -->
         <div class = "content">
-
+            <img id = "hero-img" src = "../image/ch2-hero-img.svg"></img>
+        </br>
             <p>
-                Create a rendition of your favorite app icon or logo, or propose an original.
-                Use design commands such as stroke, fill, strokeWeight and noStroke to add
+               After you're feeling comfortable sizing and placing a few different shapes, we can look to all the ways p5.js allows us to color and stylize them with design functions. Create a rendition of your favorite app icon or logo, or propose an original.
+                Use design functions such as stroke(), fill(), strokeWeight() and noStroke() to add
                 design elements to your shape commands.
-            </p>
-
-            <p class = "subheader">
-                Grab a piece of scratch paper or use the beginner grid below to draw out your design.
-                Feel free to remake an existing logo or come up with your own.
-            </p>
-            
-            <img class = "gridImg" src = "../image/beginner-grid.svg"></img>
-            <div class = "egImg">
-                <p>Examples :</p>
-                <img class = "instructionalImg" src = "../image/logo1.svg"></img>
-                <img class = "instructionalImg" src = "../image/logo2.svg"></img>
-                <img class = "instructionalImg" src = "../image/logo3.svg"></img>
-            </div>
-            <img class = "instructionalImg" src = "../image/triangle.svg"></img>
-            <img class = "instructionalImg" src = "../image/quad.svg"></img>
+            </p>        
+            <!-- <img class = "instructionalImg" src = "../image/triangle.svg"></img> -->
+            <!-- <img class = "instructionalImg" src = "../image/quad.svg"></img> -->
             <img class = "instructionalImg" src = "../image/fill.svg"></img>
             <img class = "instructionalImg" src = "../image/stroke.svg"></img>
             <img class = "instructionalImg" src = "../image/strokeWeight.svg"></img>
@@ -64,6 +68,52 @@
             <img class = "instructionalImg" src = "../image/text.svg"></img>
             <img class = "instructionalImg" src = "../image/textSize.svg"></img>
             
+
+            <br/>
+            <p class = "egText">
+                    TIP: Just like with our last p5.js sketch, always make sure you're calling your shape functions inside the square brackets of either function setup() {}
+                    or function draw() {}.
+                    
+                </p>
+                <br/>
+            <img class = "instructionalImg" src="../image/ch4/c4_star-outlines.svg"></img>
+            </br>
+            <p class= "egText">
+                    Thanks to p5.js design functions, we're able to combine multiple shapes seamlessly, like we have in this star shaped logo.
+                   Since overlapping stroke lines can be distracting, using noStroke(); and a 
+                   fill function to remove any distracting outlines, presents us with a complete, 
+                   complex shape.
+            </p>
+            </br>
+            </br>
+            <img class = "instructionalImg" src = "../image/ch4/c4_star-fills.svg"></img>
+            <p>
+                It's as if every line of code that calls a shape function is telling your 
+                browser to cut that shape out of pixelated construction paper, and then glue it down on 
+                top of your programming canvas in the place you described-- regardless of whether or 
+                not something has already been drawn on that X, Y coordinate. This is also why when 
+                you include the <span class = "blue-code">background()</span> color function on the last line of your 
+                project's code, then the very last instruction your web browser would interpret and execute is
+                placing an opaque background color on top of all the visuals that are drawn before that final instruction.
+            </p>
+            <br />
+            <br />
+            <br />
+            <h1>
+                In Closing...
+            </h1>
+            <p>
+            By this point, you're probably extremley curious with function draw() {} and function setup() {}, or extremley frustrated, or both!
+            Especially since function draw() {} might be affecting our design and color functions in unexpected ways. We'll start to disect these strange functions in the next chapter, but for now, just do your best to complete another p5.js sketch using the shape functions you've learned stylized by the color and design functions covered in this chapter.
+            </p>
+            <br/>
+            <br/>
+            <br/>
+            <p class = "egText">
+                    <a href = "chapter-4-landscape-design.html">
+                        Continue Reading
+                    </a>
+                </p>
         </div>
         <div class = "footer"></div>
     </div>

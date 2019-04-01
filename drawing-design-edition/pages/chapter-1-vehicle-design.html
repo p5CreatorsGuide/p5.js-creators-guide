@@ -13,13 +13,13 @@
 </head>
            <div id = "mySidebar" class = "sidebar">
             <a style = "font-size: 0px;" href="javascript:void(0)" onclick="closeNav()">&times;
-                <img id = "closeNav" class = "closebtn" src = "common-components/images/closebtn-icon.svg"></img>
+                <img id = "closeNav" class = "closebtn" src = "../../common-components/images/closebtn-icon.svg"></img>
                 </a>  
                <p> <a href = "../../index.html">Introduction</a> </p>
                <h3>Drawing and Design Lessons</h3>
-                <p> <a href = "drawing-design-edition/pages/chapter-1-vehicle-design.html">1: Illustrate a Vehicle to Learn Shape Functions</a> </p>
-                <p> <a href = "drawing-design-edition/pages/chapter-2-logo-design.html">2: Code a Logo to Learn Color and Design Functions</a> </p>
-                <p> <a href = "drawing-design-edition/pages/chapter-4-landscape-design.html">3: Code a Landscape to Drive it all Home </a> </p>
+                <p> <a href = "./chapter-1-vehicle-design.html">1: Build a Vehicle Using Shape Functions</a> </p>
+                <p> <a href = "./chapter-2-logo-design.html">2: Design a Logo Using Color and Design Functions</a> </p>
+                <p> <a href = "./chapter-4-landscape-design.html">3: Illustrate a Landscape Using Everything You've Learned </a> </p>
                 <h3>Animation Lessons</h3>
                 <p> <a href = "#">...</a> </p>
                 <h3>Interaction Lessons</h3>
@@ -82,37 +82,57 @@
             <p class = "egText">
                 point() and line() are very similar functions that are described using x, y coordinates from your programming canvas.
             </p>
+            <br />
+            <br />
+            <img class = "instructionalImg" src = "../image/triangle.svg"></img>
+            <br />
+            <br />
+            <img class = "instructionalImg" src = "../image/quad.svg"></img>
+            <br />
+            <p class ="egText">
+                Although the number of parameters required for both the triangle() and quad() shape function can be intimidating to make sense of at first glance, just think of them as an extension of the line() function where you're plotting coordinates for each starting and ending point.
+            </p>
+            <br />
+
+            <br />
             <img class = "instructionalImg" src = "../image/ellipse.svg"></img>
             <br />
             <p class = "egText">
-                When you provide an x, and a y parameter for an ellipse(), you're describing the center point of that ellipse. The width and height paramters of the ellipse() describe the amount of pixels it takes up on your canvas from that central x, y starting point.
+                When you provide an x, and y parameter for an ellipse() function call, you're describing the center point of that ellipse. The width and height parameters of the ellipse() describe the amount of pixels it takes up on your canvas from that central x, y starting point.
             </p>
             <img class = "instructionalImg" src = "../image/rect.svg"></img>
                             <p class = "egText">
-                                    When you provide an x, and a y parameter for a rect(), you're describing the corner point of that rectangle. The width and height paramters of the rect() describe the amount of pixels it takes up on your canvas from that top left x, y starting point.
+                                    When you provide an x, and y parameter for a rect() function call, you're describing the corner point of that rectangle. The width and height parameters of the rect() describe the amount of pixels it extends across the x-axis and down the y-axis-- from that top left x, y starting point.
                             </p>
+                            <br />
+                            <br />
+                            <br />
             <p class = "egText">
-                TIP: Be sure you're calling your shape functions inside the square brackets of either function setup() {}
+                TIP: Always make sure you're calling your shape functions inside the square brackets of either function setup() {}
                 or function draw() {}.
                 
             </p>
             <img class = "instructionalImg" src = "../image/ch1/in-scope_eg.svg"></img>
-            <p class = "egText">Otherwise, your p5.js sketch may not work properly.
+            <p class = "egText">Otherwise, your p5.js sketch may not work properly. Much more on this later.
             </p>
             <img class = "instructionalImg" src = "../image/ch1/out-of-scope_eg.svg"></img>
 
             <p>
-                By calling multiple shape functions in succession, each with their own set of parameters, (or what you provide inside the parenthesis ( ) of each function call,) we are able to orchestrate basic illustrations that our browser renders to an HTML canvas. 
+                By calling multiple shape functions in succession, each with their own set of parameters we are able to orchestrate basic illustrations that our browser renders to an HTML5 canvas. 
             </p>
             <br />
+            <br />
+            <br />
+            <h1>
+                    In Closing...
+                </h1>
             <p>
-                After you've successfully called a few shapes to your screen, try to plan out a basic illustration that you can create by combinging the basic shape functions you've mastered. I find it helps to base it off a tangible, real life object like a vehicle, but I've had students adapt this project to include fantastical unicorns, aeroplanes and giant otters. Anything else that could serve as your dream mode of transport that is even slightly on the verge of representational, will serve as an excellent first project and one we can revisit and adapt to later lessons.
+                After you're able to successfully call shapes to your screen, try to plan out a basic illustration that you can create by combinging basic p5.js shape functions. I find it helps to base it off a tangible, real life object like a vehicle, but I've had students adapt this project to include fantastical unicorns, aeroplanes and giant otters. Anything else that could serve as your dream mode of transport that is even slightly on the verge of representational, will serve as an excellent first project and one we can revisit and adapt to later lessons.
             </p>
             <a href="https://editor.p5js.org/KTT/sketches/dMOKQlijv">
             <img class = "instructionalImg" src="../image/ch1/ch1-projectScreenshot.svg"></img></a>
             <p class = "egText">
-               <a href = "https://editor.p5js.org/KTT/sketches/dMOKQlijv"> Feel free to use my example</a> if you get stuck. Notice that the order of your shape function calls do, in fact, matter.
-               <br /> Note that you can also use double forward slashes // to comment out a line of code. Anything with a // in front of it will not be interpreted by your browser and therefore will be ignored by your p5.js project entirely. This is a great way to not only temporarily 'disable' a line of code, but also leave yourself notes!
+               <a href = "https://editor.p5js.org/KTT/sketches/dMOKQlijv"> Feel free to use my example</a> if you get stuck. Notice that the order of your shape function calls do, in fact, matter. If the triangle() and/or the quad() function are confusing or intimidating, feel free to set those aside for the next project as they do take a bit more focus to execute correctly. Note that you can also use double forward slashes // to comment out a line of code. Anything with a // in front of it will not be interpreted by your browser and therefore will be ignored by your p5.js project entirely. This is a great way to not only temporarily 'disable' a line of code, but also leave yourself notes!
             </p>
             <br />
 
