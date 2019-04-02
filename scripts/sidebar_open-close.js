@@ -19,11 +19,12 @@ let w = getWidth();
 
 
 
+let maxW = document.getElementById("mySidebar").style.max-width;
 function openNav() {
     if(w <= 600){
-        document.getElementById("mySidebar").style.width = "750px";
+        document.getElementById("mySidebar").style.width = "650px";
     }else{
-        document.getElementById("mySidebar").style.width = "750px";
+        document.getElementById("mySidebar").style.width = "650px";
 
     }
     document.getElementById("closeNav").style.width = "21px";

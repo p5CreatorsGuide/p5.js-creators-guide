@@ -41,13 +41,14 @@ img {
   flex-direction: column;
   height: 100%;
   width: 0%;
-  -webkit-transition: 2s;
+  max-width: 80%;
   margin-top: -8px;
   margin-left: -8px;
-  -webkit-transition: 1.5s;
+  -webkit-transition: 1s;
   overflow-x: hidden;
   z-index: 9999999;
   text-align: left;
+  color: rgba(0, 0, 0, 0);
   grid-area: sidebar;
   background-color: rgba(241, 76, 126, 0.9);
   z-index: 20;
@@ -284,34 +285,27 @@ img {
   position: fixed;
   background-color: white;
   background: linear-gradient(180deg, #333333, #333333f6);
-  box-shadow: -5px 7px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px 15px 9px rgba(0, 0, 0, 0.3);
   font-family: "Inconsolata", monospace;
   margin-left: -10px;
+  border-bottom: 1.25px solid rgba(241, 76, 126, 0.8);
 }
 #pageHeader h1 {
   font-size: 36px;
   text-align: right;
   font-style: thin;
   margin-right: 15%;
+  margin-left: 23%;
   color: #f14c7e;
 }
 #pageHeader h2 {
-  margin-left: 20%;
+  margin-left: 23%;
   font-size: 24px;
   font-style: thin;
   text-align: right;
   margin-right: 15%;
   margin-bottom: 2%;
   color: rgba(241, 76, 126, 0.9);
-}
-
-#headerBreak {
-  grid-area: header;
-  margin-top: 3px;
-  width: 100%;
-  z-index: 1;
-  margin-top: 2%;
-  border-top: 1.25px solid rgba(241, 76, 126, 0.5);
 }
 
 #footerBreak {
@@ -355,7 +349,7 @@ img {
   float: right;
   width: 10%;
   height: 10%;
-  -webkit-transition: 2s;
+  -webkit-transition: 0.5s;
   max-width: 120px;
   min-width: 90px;
 }
@@ -364,24 +358,23 @@ img {
   width: 11%;
   height: 11%;
   max-width: 145px;
-  -webkit-transition: 2s;
+  -webkit-transition: 0.5s;
 }
 
 #nav-menu {
-  padding: 10px;
-  width: 100px;
-  height: 100px;
+  margin-top: 3%;
+  width: 62px;
+  height: 62px;
   box-shadow: -4px, 7px, 7px, black;
-  -webkit-transition: 2s;
+  -webkit-transition: 0.5s;
   position: fixed;
   z-index: 99999;
 }
 
 #nav-menu:hover {
-  padding: 5px;
-  width: 112px;
-  height: 112px;
-  -webkit-transition: 2s;
+  width: 66px;
+  height: 66px;
+  -webkit-transition: 0.5s;
 }
 
 /*# sourceMappingURL=ebook-grids.css.map */
