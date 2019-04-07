@@ -6,10 +6,10 @@
        
         },
         "templates": {
-          "body": {
-            "style": {
-              "color": "#ffffff",
-              "border": "none"
+          
+            "body": {
+                "type":"html",
+                "url":"https://p5creatorsguide.github.io/interaction-edition/p5-projects/terrain-generator/"
             },
             "header": {
               "style": {
