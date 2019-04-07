@@ -276,6 +276,7 @@ img {
 
 .header {
   grid-area: header;
+  height: 15%;
 }
 
 #pageHeader {
