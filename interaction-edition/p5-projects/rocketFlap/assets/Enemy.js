@@ -1,15 +1,27 @@
-function Enemy(x,y,s,dir,speed,speedX, speedY){
+function Enemy(x,y,s,mass){
 
     this.x = x;
     this.y = y;
     this.s = s;
-    this.dir = dir;
-    this.speed = speed;
-    this.speedX = speedX;
-    this.speedY = speedY;
+    this.mass = createVector(0,0);
 
+    // this.dir = dir;
+    // this.speed = speed;
+    // this.speedX = speedX;
+    // this.speedY = speedY;
+    // this.pos = this.pos;
+    // this.acc = this.acc;
+    // this.vel = this.vel;
+
+
+    this.pos = createVector(this.x, this.y);
+    this.acc = createVector(0, 0);
+    this.vel = createVector(0, 0);
+
+    
     this.draw = function() {
-        translate(this.x,this.y);
+        rectMode(CORNER);
+        translate(this.pos.x,this.pos.y);
         scale(this.s);
         noStroke();
         fill(30,255,10,40);
@@ -33,25 +45,61 @@ function Enemy(x,y,s,dir,speed,speedX, speedY){
         ellipse(0,0,150,30);
         resetMatrix();
     }
-
+    
     this.update = function() {
-        this.dir = atan((Flappy.pos.y-this.y) / (Flappy.pos.x - this.x));
-        this.speedX = cos(this.dir) * this.speed;
-        this.speedY = sin(this.dir) * this.speed;
-        if(Flappy.pos.x >= this.x){
-            this.x += this.speedX;
-            this.y += this.speedY;
+        // this.dir = atan((Flappy.pos.y - this.y) / (Flappy.pos.x - this.x));
+        // this.speedX = cos(this.dir) * this.speed;
+        // this.speedY = sin(this.dir) * this.speed;
+        this.pos.add(this.vel);
+        this.vel.add(this.acc);
+        this.acc.add(this.mass);
+        
+        if (this.acc.x > 1){
+            this.acc.x = 1;
         }
-        else{
-            this.x -= this.speedX;
-            this.y -= this.speedY;
+        if (this.acc.x < -1){
+            this.acc.x = -1;
+        }
+        
+        
+        if(Flappy.pos.x >= this.x){
+            // this.vel.x = -this.vel.x;
+            this.mass.x = 0.01;
+            if( dist(this.pos.x, this.pos.y, Flappy.pos.x, Flappy.pos.y) <= 100){
+                this.vel.x = 0;
+                this.mass.x = random(-0.1,-0.2);
+            }
+        }
+        if(Flappy.pos.x <= this.x){
+            // this.vel.x = -this.vel.x;
+            this.mass.x = -0.01;
+            if( dist(this.pos.x, this.pos.y, Flappy.pos.x, Flappy.pos.y) <= 100){
+                this.vel.x = 0;
+                this.mass.x = random(0.1,0.2);
+
+            }
+        }
+
+    }
+    this.boundaries = function() {
+        if(this.pos.x > 3000){
+            this.vel.x = 0;
+            this.acc.x = 0;
+            this.mass.x = random(-0.1, -0.2);
         }
     }
 }
 
-const Alien = function() {
-    let alien = new Enemy(500,500,1,0,5,0,0);
-    alien.draw();
-    alien.update();
-};
+            
+         
+        
+        // const Alien = function() {
+            
+            
+            //     let alien = new Enemy(400,400,0.4,2,5,5,5);
+            //     alien.draw();
+            //     alien.update();
+            //     // alien.moveTest();
+// };
 
+// 

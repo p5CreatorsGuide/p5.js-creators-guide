@@ -1,5 +1,6 @@
 new p5();
 
+
 function setup() {
     rectMode(CENTER);
     angleMode(DEGREES);
@@ -10,13 +11,28 @@ function setup() {
 
 
 function draw() {
+    background(25, 175, 255);
+    fill(20, 155, 155);
+    rect(-300, 500, 2500, 150);
+    backdrop();
     for (var t = 0; t < trees.length; t ++) {
         trees[t].draw();
+        // trees[t].pan();
+    }
+    
+    for (var a = 0; a < aliens.length; a++) {
+        // aliens[a].setup();
+        aliens[a].draw();
+        aliens[a].update();
+        // aliens[a].applyForce(grav);
     }
 
-    backdrop();
+    
     flappy();
-    Alien();
+    // Alien();
+
+
+    
     obst1 -= 5;
     obst2 -= 5;
     obst3 -= 5;

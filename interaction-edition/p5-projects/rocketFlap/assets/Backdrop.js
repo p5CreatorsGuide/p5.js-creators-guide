@@ -5,9 +5,9 @@ let Backdrop = {
     y: 0,
     show: function () {
         translate(this.x, this.y);
-        background(25, 175, 255);
-        fill(20, 155, 155);
-        rect(-300, 500, 2500, 150);
+        // background(25, 175, 255);
+        // fill(20, 155, 155);
+        // rect(-300, 500, 2500, 150);
 
         for (var t = 0; t < trees.length; t ++) {
             trees[t].draw();

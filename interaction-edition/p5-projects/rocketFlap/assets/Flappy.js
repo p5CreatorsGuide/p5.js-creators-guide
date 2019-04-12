@@ -86,7 +86,7 @@ let Flappy = {
     boundaries: function (){
         
            if(this.pos.y > height){
-           this.shield = this.shield - 1;
+                this.shield = this.shield - 1;
                this.vel.y = random(-3,-7);
                this.acc.y = 0;
                this.face = random (20, 120);
