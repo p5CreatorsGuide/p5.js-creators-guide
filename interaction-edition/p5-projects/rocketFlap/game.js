@@ -25,10 +25,15 @@ function draw() {
         aliens[a].draw();
         aliens[a].update();
         // aliens[a].applyForce(grav);
+        // alienDeath();
+
+        // if (dist(flappyProjectile.pos.x,flappyProjectile.pos.y,aliens[a].x, aliens[a].y) < 100){
+        //     aliens[a].pop();
+        // } 
     }
+    flappy();
 
     
-    flappy();
     // Alien();
 
 

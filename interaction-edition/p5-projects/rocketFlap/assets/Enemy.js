@@ -60,6 +60,12 @@ function Enemy(x,y,s,mass){
         if (this.acc.x < -1){
             this.acc.x = -1;
         }
+        if (this.acc.y > 1){
+            this.acc.y = 1;
+        }
+        if (this.acc.y < -1){
+            this.acc.y = -1;
+        }
         
         
         if(Flappy.pos.x >= this.x){

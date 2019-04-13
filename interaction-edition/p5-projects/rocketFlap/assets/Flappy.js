@@ -11,7 +11,7 @@ let Flappy = {
     sze: 0.5,
     shield: 100,
     projectiles: [],
-    ammo: 1,
+    ammoTimer: 0,
     death: false,
     deathParticles: [],
     
@@ -149,8 +149,12 @@ let Flappy = {
         //     }
         // }
         if(keyIsDown(32)){
-            this.projectiles.push(new flappyProjectile(this.pos.x+20, this.pos.y-5,this.face,7));
-            
+            this.ammoTimer++;
+            if(this.ammoTimer < 2){
+                this.projectiles.push(new flappyProjectile(this.pos.x+20, this.pos.y-5,this.face,7));
+            }else if(this.ammoTimer > 10){
+                this.ammoTimer = 0;
+            }
         }
     },
     death: function (){

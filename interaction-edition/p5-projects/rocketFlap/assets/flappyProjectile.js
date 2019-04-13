@@ -28,13 +28,18 @@ function flappyProjectile (x,y,dir,speed) {
     this.draw = function () {
        
         // draws bullets to screen
-       
         noStroke();
-        fill(230,250,40,100);
-        rect(this.x, this.y, 10, 10);
-        fill(230,250,40,75);
-        rect(this.x, this.y, 7, 7);
-        fill(230,250,40,50);
+        fill(255, 50, 50,50);
+        ellipse(this.x, this.y, 15, 15);
+        fill(255, 152, 153,100);
+        ellipse(this.x, this.y, 7, 7);
+        fill(230,250,40,250);
         ellipse(this.x, this.y, 4, 4);
     };
 }
+
+
+
+let projectiles = [
+    new flappyProjectile()
+];
