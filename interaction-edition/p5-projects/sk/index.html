@@ -1,0 +1,644 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/momentum-ui.css">
+    <link rel="stylesheet" type="text/css" href="styles/wayno-template.css">
+    <link rel="stylesheet" type="text/css" href="styles/wayno_top-bar.css">
+</head>
+
+ <!-- grid example -->
+ <div class="show-grid">
+        <div class="row">
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+            <div class="columns medium-1">.medium-1</div>
+        </div>
+        <div class="row">
+            <div class="columns medium-8">.medium-8</div>
+            <div class="columns medium-4">.medium-4</div>
+        </div>
+        <div class="row">
+            <div class="columns medium-4">.medium-4</div>
+            <div class="columns medium-4">.medium-4</div>
+            <div class="columns medium-4">.medium-4</div>
+        </div>
+        <div class="row">
+            <div class="columns medium-6">.medium-6</div>
+            <div class="columns medium-6">.medium-6</div>
+        </div>
+        <div class="row">
+            <div class="columns medium-9">.medium-9</div>
+            <div class="columns medium-3">.medium-3</div>
+        </div>
+    </div>
+<div class="show-grid">
+  <div class="row">
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3</div>
+  </div>
+  <div class="row">
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns">3</div>
+    <div class="medium-3 columns end">3 end</div>
+  </div>
+</div>
+    <div class="show-grid">
+        <div class="row medium-uncollapse large-collapse">
+            <div class="small-6 columns">
+                Removes gutter at large media query
+            </div>
+            <div class="small-6 columns">
+                Removes gutter at large media query
+            </div>
+        </div>
+    </div>
+    <!-- pill tab examples -->
+    <div class="row">
+    <div class="md-tab md-tab--pills" type="pills">
+        <ul class="md-tab__list" role="tab">
+            <li class="md-tab__item active">
+                <a role="tab" href="" aria-current="true">First Tab</a>
+            </li>
+            <li class="md-tab__item">
+                <a role="tab" href="" aria-current="false">Second Tab</a>
+            </li>
+            <li class="md-tab__item">
+                <a role="tab" href="" aria-current="false">Third Tab</a>
+            </li>
+        </ul>
+        <div class="md-tab__content">
+            <div class="md-tab__pane active">
+                <div class="md-tab__content">Testing 1</div>
+            </div>
+            <div class="md-tab__pane">
+                <div class="md-tab__content">Testing 2</div>
+            </div>
+            <div class="md-tab__pane">
+                <div class="md-tab__content">Testing 3</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- top-nav bar example. -->
+    <header class="md-top-bar md-top-bar--light" role="navigation">
+        <div class="md-top-bar__container">
+            <div class="md-top-bar__brand">
+                <a class="md-brand" href="/">
+                    <div class="md-brand__logo">
+                        <img src='assets/images/cisco/cisco-logo-blue.png'>
+                    </div>
+                    <div class="md-brand__title">HELP CENTER</div>
+                </a>
+            </div>
+            <nav class="md-top-bar__nav ">
+                <div class="md-list md-list--horizontal" role="list">
+                    <a class="md-list-item active" role="listItem" href="javascript:void(0)">Webex.com</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Downloads</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Community</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Contact Us</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Language</a>
+                </div>
+            </nav>
+            <div class="md-top-bar__right ">
+                <!-- Note: conditionally show top-bar__user or top-bar__logged-out -->
+                <div class="md-top-bar__user">
+                </div>
+                <div class="md-top-bar__logged-out">
+                    <a href="javascript:void(0)">Log In</a>
+                    <button class="md-button md-button--blue">Button</button>
+                </div>
+            </div>
+            <i class="md-top-bar__mobile-menu-button icon icon-list-menu_20"></i>
+            <div class="md-top-bar__mobile md-tb-mobile">
+                <i class="icon icon-cancel_20"></i>
+                <div class="md-top-bar__brand">
+                    <a class="md-brand" href="/">
+                        <div class="md-brand__logo">
+                            <img src="/assets/spark-logo.svg">
+                        </div>
+                        <div class="md-brand__title">Momentum UI</div>
+                    </a>
+                </div>
+                <div class="md-list-separator"></div>
+                <nav class="md-tb-mobile__nav" role="navigation">
+                    <a class="md-list-item active" role="listItem" href="javascript:void(0)">Get Started</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Product Help</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Troubleshooting</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Training</a>
+                    <a class="md-list-item active" role="listItem" href="javascript:void(0)">Accounts</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Adoption</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">How-To's</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Search</a>
+                    <div class="md-list-separator"></div>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Sign out</a>
+                </nav>
+            </div>
+            <div class="md-tb-mobile__mask" role="none"></div>
+        </div>
+    </header>
+    <header class="md-top-bar md-top-bar--darkBlue" role="navigation">
+        <div class="md-top-bar__container">
+            <div class="md-top-bar__brand">
+
+            </div>
+            <nav class="md-top-bar__nav ">
+                <div class="md-list md-list--horizontal" role="list">
+                    <a class="md-list-item active" role="listItem" href="javascript:void(0)">Get Started</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Product Help</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Troubleshooting</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Training</a>
+                    <a class="md-list-item active" role="listItem" href="javascript:void(0)">Accounts</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Adoption</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">How-To's</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Search</a>
+                    <div class="md-list-separator"></div>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Sign out</a>
+                </div>
+            </nav>
+
+            <i class="md-top-bar__mobile-menu-button icon icon-list-menu_20"></i>
+            <div class="md-top-bar__mobile md-tb-mobile">
+                <i class="icon icon-cancel_20"></i>
+                <div class="md-top-bar__brand">
+                    <a class="md-brand" href="/">
+                        <div class="md-brand__logo">
+                            <img src="/assets/spark-logo.svg">
+                        </div>
+                        <div class="md-brand__title">Momentum UI</div>
+                    </a>
+                </div>
+                <div class="md-list-separator"></div>
+                <nav class="md-tb-mobile__nav" role="navigation">
+                    <a class="md-list-item active" role="listItem" href="javascript:void(0)">Develop</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Styles</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Layout</a>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Navigation</a>
+                    <div class="md-list-separator"></div>
+                    <a class="md-list-item" role="listItem" href="javascript:void(0)">Sign out</a>
+                </nav>
+            </div>
+            <div class="md-tb-mobile__mask" role="none"></div>
+        </div>
+    </header>
+<body class="body-bg">
+   
+
+    <!-- start of article container -->
+    <div class="row">
+        <div class = "small-2 columns"></div>
+        <div class = "lg-8 columns">
+        <main class='article-content' role="main">
+            <!-- start of topic-1-->
+            <article  id = 'topic-1' role="article">
+                <div class='row'>
+                    <!--toc starts-->
+                    <nav>
+                        <ul class="simple"></ul>
+                    </nav>
+                    <!--toc ends-->
+                    <!-- overview -->
+
+                    <h1 class="title topictitle1" id="ariaid-title1">Get Started with Cisco Webex Meetings for Host
+                    </h1>
+                    <h3 class='short-description'>Cisco Webex Meetings makes hosting an online meeting easy. You can
+                        schedule a meeting in advance or start one right away. When it's time to meet, you can
+                        present and collaborate with your team as if you're in the same room.</h3>
+                    <p class="topictitle1" id=""></p>
+                </div>
+                <!-- <div class="tabs-container">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#topic_B7738FECCE09A42CBB7A62FBBE1A3809">WBS33
+                                    and Later</a></li>
+                            <li><a data-toggle="tab" href="#topic_jcv_xnz_rz">WBS32</a></li>
+                        </ul>
+                    </div> -->
+
+                <!-- start chapter-map-tabs -->
+                <div class='row'>
+                    <div class="columns medium-4"></div>
+                    <div class="columns medium-4">
+                        <div class="map-tabs md-tab md-tab--pills" type="pills">
+                            <ul class="md-tab__list" role="tab">
+                                <li class="md-tab__item active">
+                                    <a role="tab" href="index.html" aria-current="true">WBS33</a>
+                                </li>
+                                <li class="md-tab__item">
+                                    <a role="tab" href="#" aria-current="false">WBS22</a>
+                                </li>
+                            </ul>
+                            <!-- <div class="md-tab__content">
+                              <div class="md-tab__pane active">
+                                <div class="md-tab__content">Testing 1</div>
+                              </div>
+                              <div class="md-tab__pane">
+                                <div class="md-tab__content">Testing 2</div>
+                              </div>
+                              <div class="md-tab__pane">
+                                <div class="md-tab__content">Testing 3</div>
+                              </div> -->
+                        </div>
+                    </div>
+                    <div class="collumns medium-4"></div>
+                </div>
+                <!-- end chapter-map-tabs -->
+                <!-- start topic 1 -->
+                <div class="row">
+                    <div class="tab-pane fade in active" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809">
+
+                        <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__d59e31">
+
+
+                            <p class="p"><img class="#"
+                                    src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/428001-429000/428054.jpg">
+                            </p>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="collumns medium-4"></div>
+
+                    <div class="columns medium-8">
+                        <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__section_d2c_2p2_ry">
+                            <h2 class="title sectiontitle">Schedule a Meeting</h2>
+
+                            <h3>Sign in to your <span class="ph">Webex</span> site and from the Modern View home page,
+                                select <span class="ph uicontrol">Schedule a Meeting</span> </h3>
+                    </div>
+                    <!-- <div class="collumns medium-2"></div> -->
+                </div>
+                <div class="row">
+                    <img class="inline-graphic"
+                        src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/426001-427000/426594.jpg">.
+                    Fill in the necessary meeting information and select <span class="ph uicontrol">Schedule</span>.
+
+
+                    <img src="https://www.cisco.com/c/dam/en/us/td/i/esp/icons/icon-notes.svg"><br><b></b>
+
+
+                    <div class="note__content">
+
+                        <p class="p">If you need more detailed meeting options, such as
+                            registration, go to the <span class="ph uicontrol">Advanced
+                                Scheduler</span> in Classic View.
+                        </p>
+
+                    </div>
+
+                    <p class="p"><img class="image" height="298"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/426001-427000/426833.jpg"
+                            width="473"></p>
+                    </section>
+                </div>
+                <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__section_b1k_f4z_rz">
+                    <h3 class="title sectiontitle">Start a Meeting</h3>
+
+
+                    <p class="p">At the scheduled meeting time, sign in to your <span class="ph">Webex</span> site. From
+                        the home page, in the Upcoming
+                        Meetings tile, locate your meeting. Select <span class="ph uicontrol">Start</span>.
+                    </p>
+
+                    <table class="olh_note" border="0" role="note">
+                        <tr>
+                            <td width="5%" class="olh_note" role="heading" border="0" valign="top">
+                                <img src="https://www.cisco.com/c/dam/en/us/td/i/esp/icons/icon-notes.svg"><br><b></b>
+                            </td>
+                            <td border="0" class="olh_note">
+                                <div class="note__content">
+
+                                    <p class="p">If you don't see your meeting in the tile, you can
+                                        select <span class="ph uicontrol">View all meetings</span>
+                                        to see more scheduled meetings.
+                                    </p>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p class="p"><img class="image" height="137"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/426001-427000/426832.jpg"
+                            width="547"></p>
+
+                </section>
+                <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__d59e88">
+                    <h3 class="title sectiontitle">Connect Audio</h3>
+
+
+                    <p class="p">When you join a meeting, the Audio and Video Connection dialog box
+                        appears. If you don't choose an audio connection at the
+                        start of your meeting, you can select <span class="ph uicontrol">Connect
+                            audio and video</span>
+                        <img class="image" height="57"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427393.jpg"
+                            width="56"> to go back to the Audio and Video Connection dialog box.
+                    </p>
+
+                    <p class="p">To connect your audio during a <span class="ph">Webex</span>
+                        meeting, you can use your phone, computer, or a video device.
+                    </p>
+
+                    <p class="p">During a meeting, you can stop or start your audio connection at
+                        any time. From the meeting control panel, you can select
+                        <span class="ph uicontrol">Mute</span>
+                        <img class="image" height="59"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427404.jpg"
+                            width="62"> and <span class="ph uicontrol">Unmute</span>
+                        <img class="image" height="60"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427405.jpg"
+                            width="62"> to turn your audio on or off.
+                    </p>
+
+                </section>
+                <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__d59e120">
+                    <h3 class="title sectiontitle">Start Your Video</h3>
+
+
+                    <p class="p">When you join a meeting, the Audio and Video Connection dialog box
+                        appears. If you don't choose a video connection at the
+                        start of your meeting, you can select <span class="ph uicontrol">Connect
+                            audio and video</span>
+                        <img class="image" height="57"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427393.jpg"
+                            width="56"> to go back to the Audio and Video Connection dialog box.
+                    </p>
+
+                    <p class="p">During a meeting, you can stop and start your video connection at
+                        any time. From the meeting control panel, you can select
+                        <span class="ph uicontrol">Switch camera device or stop my video</span>
+                        <img class="image" height="59"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427406.jpg"
+                            width="61"> and <span class="ph uicontrol">Start my video</span>
+                        <img class="image" height="61"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427407.jpg"
+                            width="60"> to turn your video on or off.
+                    </p>
+
+                    <p class="p"><img class="image" height="389"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427394.jpg"
+                            width="494"></p>
+
+                </section>
+                <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__section_rtv_f21_sz">
+                    <h3 class="title sectiontitle">Share Content</h3>
+
+
+                    <p class="p">To share content during a meeting, from the meeting control panel,
+                        select <span class="ph uicontrol">Share content</span>
+                        <img class="image" height="61"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427409.jpg"
+                            width="63">.
+                    </p>
+
+                    <p class="p"><img class="image" height="374"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427401.jpg"
+                            width="534"></p>
+
+                    <table class="olh_note" border="0" role="note">
+                        <tr>
+                            <td width="5%" class="olh_note" role="heading" border="0" valign="top">
+                                <img src="https://www.cisco.com/c/dam/en/us/td/i/esp/icons/icon-tips.svg"><br><b></b>
+                            </td>
+                            <td border="0" class="olh_note">
+                                <div class="note__content">Go to the <span class="ph uicontrol">Share</span>
+                                    menu for more sharing
+                                    options.
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+                <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__section_wbk_h4z_rz">
+                    <h3 class="title sectiontitle">Record a Meeting</h3>
+
+
+                    <p class="p">Your meetings are important. If your whole team can't be there, or
+                        if you want to remember what was said, record your meeting
+                        to share later. The recording includes the audio, video, and presentation.
+                    </p>
+
+                    <p class="p">While in your event, select <span class="ph uicontrol">Recorder</span>
+                        <img class="image" height="61"
+                            src="https://www.cisco.com/content/dam/en/us/td/i/400001-500000/420001-430000/427001-428000/427408.jpg"
+                            width="62"> and <span class="ph uicontrol">Record</span> to record right
+                        away. You and your participants see a red icon at the top right of your
+                        window when recording is in process.
+                    </p>
+
+                    <p class="p">When the meeting ends, you can find your recording on the My
+                        Recorded Meetings page of your Webex site in Modern View.</p>
+
+                </section>
+                <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__section_vw2_hsd_p1b">
+                    <h3 class="title sectiontitle">High-Quality Video-Supported Cameras</h3>
+
+
+                    <p class="p">Most PC-compatible cameras should work with Webex. The following
+                        cameras were tested for high-quality video:</p>
+
+                    <ul class="ul" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__ul_q3c_jsd_p1b">
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_9C421E6193594639BCE44F7ECDC5D3F2">
+
+                            <p class="p">Cisco Precision HD </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_36763D4C8CF644528B47662E48C9AD45">
+
+                            <p class="p">Cisco VT Camera II</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_A893A340E969485B8771448D2534FDEC">
+
+                            <p class="p">Cisco VT Camera III</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_F293FB14CB5E49A582D0A889FDABAF4B">
+
+                            <p class="p">Logitech HD Pro Webcam C910</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_9D61493453954DDEAA745DB6171F8778">
+
+                            <p class="p">Logitech HD Webcam C920</p>
+
+                        </li>
+                        <li class="li">
+
+                            <p class="p">Logitech QuickCam C905</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_5E5A3682B0AD4A069B8E408BCC8321C6">
+
+                            <p class="p">Logitech QuickCam Orbit AF</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_5FFB51F58AF6426FBD6E14BFF8DFAB09">
+
+                            <p class="p">Logitech QuickCam Pro 9000</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_AC3136C36DD34981A175D78B3045DA17">
+
+                            <p class="p">Logitech QuickCam S7500</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_D5269DAA3EE641818BEF824D9D164F45">
+
+                            <p class="p">Microsoft LifeCam Cinema</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_AFF9CD6CCE5241B3B2A39A95430293FF">
+
+                            <p class="p">Microsoft LifeCam HD</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_B5C25353118B49D398D5E3EC23151813">
+
+                            <p class="p">Microsoft LifeCam NX-6000</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_771BE6D8896E4793AC14B35CBA0E19E9">
+
+                            <p class="p">Microsoft LifeCam VX-1000</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_1D7813179CE1482FA350E2682FB485B2">
+
+                            <p class="p">Microsoft LifeCam VX-3000</p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_1ECC61AD5C3E4C52813018F94A0E08C6">
+
+                            <p class="p">Microsoft LifeCam VX-6000</p>
+
+                        </li>
+                    </ul>
+
+                </section>
+                <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__section_sfm_jsd_p1b">
+                    <h3 class="title sectiontitle">High-Definition Video-Supported Cameras</h3>
+
+
+                    <p class="p">The following cameras were tested for high-definition video:</p>
+
+                    <ul class="ul" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__ul_y5w_lsd_p1b">
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_5A1E3DB06E714655A26CB3F396BCA607">
+
+                            <p class="p">Logitech HD Webcam C310 </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_0AF8787DFFD34A6B8BE6FF8EA2E21464">
+
+                            <p class="p">Logitech HD Webcam C500 </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_F15166B8D3FC486A9DA3363157E77063">
+
+                            <p class="p">Logitech HD Webcam C510 </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_A9A2BF672E1A4F59A5AC10A0863B5A77">
+
+                            <p class="p">Logitech HD Webcam C905/B905 </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_737CF1F2D5CD4521B940763544C29342">
+
+                            <p class="p">Logitech HD Pro Webcam C910/B910 </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_44D48F3F39F44A499E2D473877ECE1A1">
+
+                            <p class="p">Logitech HD Webcam C920 </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_C31D6F527D244818A6831EABD4D05239">
+
+                            <p class="p">Microsoft LifeCam HD-5000/HD-5001 </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_9153DE39D81D4561BC1C991D30EEC9D6">
+
+                            <p class="p">Microsoft LifeCam HD-6000 </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_282B0AE31DFB41CDB2E02E83E92DB2D4">
+
+                            <p class="p">Microsoft LifeCam Cinema </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_DFDB51A9B69745F7843C0D0D81839F1D">
+
+                            <p class="p">Microsoft LifeCam Studio </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_4DBF658B86A24746AE26C1D8B42A9E3A">
+
+                            <p class="p">Cisco Precision HD </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_8F0DBCEDC7034E1DB61E45FC2E84BD94">
+
+                            <p class="p">Cisco VT Camera III </p>
+
+                        </li>
+                        <li class="li" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__li_91452DB4FEDC47CD82AFE6D36635DD0D">
+
+                            <p class="p">Apple iSight HD </p>
+
+                        </li>
+                    </ul>
+
+                </section>
+                <section class="section" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__section_bbl_3bm_rz">
+                    <h3 class="title sectiontitle">Learn More</h3>
+
+
+                    <ul class="ul" id="topic_B7738FECCE09A42CBB7A62FBBE1A3809__ul_ibx_vbm_rz">
+                        <li class="li">
+
+                            <p class="p"><a class="xref" href="https://collaborationhelp.cisco.com/article/0tow9g"
+                                    target="_blank">Install and Set Up the Cisco Webex Meetings
+                                    Desktop App</a></p>
+
+                        </li>
+                        <li class="li">
+
+                            <p class="p"><a class="xref" href="https://collaborationhelp.cisco.com/article/nboahd2"
+                                    target="_blank">Schedule a Meeting in Microsoft Outlook Using
+                                    the Webex Meetings Desktop App</a></p>
+
+                        </li>
+                    </ul>
+
+                </section>
+            </article>
+            <!-- end topic 1 -->
+
+        </main>
+    </div>
+        <div class = 'small-2 columns'></div>
+    </div>  
+    <!-- end of article container -->
+
+    
+
+  
+
+</body>
+
+
+</html>
